@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modelos_fragmento",
+  "info": {
+    "singularName": "modelo-fragmento",
+    "pluralName": "modelos-fragmento",
+    "displayName": "Modelo de fragmento",
+    "description": "HTML, CSS e JS de um bloco visual. {{c:campo}} e {{a:campo:atributo}} recebem o conteúdo de cada instância."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chave": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    },
+    "html": {
+      "type": "text"
+    },
+    "css": {
+      "type": "text"
+    },
+    "js": {
+      "type": "text"
+    }
+  }
+}

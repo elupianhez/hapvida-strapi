@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obj_demonstrativo_financeiros",
+  "info": {
+    "singularName": "obj-demonstrativo-financeiro",
+    "pluralName": "obj-demonstrativo-financeiros",
+    "displayName": "Demonstrativo Financeiro",
+    "description": "Migrado de \"demonstrativofinanceiros\""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "erc": {
+      "type": "string"
+    },
+    "escopo": {
+      "type": "string"
+    },
+    "categorias": {
+      "type": "json"
+    },
+    "criadoEm": {
+      "type": "datetime"
+    },
+    "modificadoEm": {
+      "type": "datetime"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "data": {
+      "type": "date"
+    },
+    "subTitulo": {
+      "type": "string"
+    },
+    "sites": {
+      "type": "json"
+    },
+    "arquivo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

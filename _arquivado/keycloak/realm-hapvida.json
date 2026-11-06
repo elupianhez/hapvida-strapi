@@ -1,0 +1,51 @@
+{
+  "realm": "hapvida",
+  "displayName": "Hapvida (PoC)",
+  "enabled": true,
+  "sslRequired": "none",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "internationalizationEnabled": true,
+  "supportedLocales": ["pt-BR", "en"],
+  "defaultLocale": "pt-BR",
+  "clients": [
+    {
+      "clientId": "portal-beneficiario",
+      "name": "Portal do Beneficiário",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": false,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "portal-beneficiario-segredo-poc",
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": false,
+      "rootUrl": "http://localhost:3301",
+      "redirectUris": ["http://localhost:3301/api/auth/callback"],
+      "webOrigins": ["http://localhost:3301"],
+      "attributes": {
+        "pkce.code.challenge.method": "S256",
+        "post.logout.redirect.uris": "http://localhost:3301"
+      }
+    }
+  ],
+  "users": [
+    {
+      "username": "maria",
+      "email": "maria@hapvida.poc",
+      "emailVerified": true,
+      "firstName": "Maria",
+      "lastName": "Silva",
+      "enabled": true,
+      "credentials": [{ "type": "password", "value": "hapvida123", "temporary": false }]
+    },
+    {
+      "username": "joao",
+      "email": "joao@hapvida.poc",
+      "emailVerified": true,
+      "firstName": "João",
+      "lastName": "Souza",
+      "enabled": true,
+      "credentials": [{ "type": "password", "value": "hapvida123", "temporary": false }]
+    }
+  ]
+}

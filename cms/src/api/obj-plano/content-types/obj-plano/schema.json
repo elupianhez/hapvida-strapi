@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obj_planos",
+  "info": {
+    "singularName": "obj-plano",
+    "pluralName": "obj-planos",
+    "displayName": "Plano",
+    "description": "Migrado de \"planos\""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "erc": {
+      "type": "string"
+    },
+    "escopo": {
+      "type": "string"
+    },
+    "categorias": {
+      "type": "json"
+    },
+    "criadoEm": {
+      "type": "datetime"
+    },
+    "modificadoEm": {
+      "type": "datetime"
+    },
+    "name": {
+      "type": "string"
+    },
+    "aboutPlan": {
+      "type": "richtext"
+    },
+    "gracePeriod": {
+      "type": "richtext"
+    },
+    "teleconsultation": {
+      "type": "richtext"
+    },
+    "scope": {
+      "type": "richtext"
+    },
+    "coverage": {
+      "type": "richtext"
+    },
+    "accommodation": {
+      "type": "richtext"
+    },
+    "accommodations": {
+      "type": "json"
+    },
+    "benefits": {
+      "type": "json"
+    }
+  }
+}

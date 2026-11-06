@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obj_noticias",
+  "info": {
+    "singularName": "obj-noticia",
+    "pluralName": "obj-noticias",
+    "displayName": "Noticia",
+    "description": "Migrado de \"noticias\""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "erc": {
+      "type": "string"
+    },
+    "escopo": {
+      "type": "string"
+    },
+    "categorias": {
+      "type": "json"
+    },
+    "criadoEm": {
+      "type": "datetime"
+    },
+    "modificadoEm": {
+      "type": "datetime"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "data": {
+      "type": "date"
+    },
+    "subTitulo": {
+      "type": "string"
+    },
+    "conteudo": {
+      "type": "richtext"
+    },
+    "imagem": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sites": {
+      "type": "json"
+    },
+    "categoriaPrincipal": {
+      "type": "string"
+    },
+    "ordem": {
+      "type": "integer"
+    },
+    "ordemInt": {
+      "type": "integer"
+    }
+  }
+}

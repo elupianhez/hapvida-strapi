@@ -1,0 +1,119 @@
+# Hapvida: sites em Strapi (conteúdo) + Next.js (front). Sem Liferay.
+#   docker compose up -d --build
+name: hapvida-novos-portais
+
+services:
+  # ── CMS headless (Strapi 5) ────────────────────────────────────────────────
+  cms:
+    build: ./cms
+    ports: ["1337:1337"]
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_NAME: strapi
+      DATABASE_USERNAME: strapi
+      DATABASE_PASSWORD: strapi
+      APP_KEYS: ${STRAPI_APP_KEYS}
+      API_TOKEN_SALT: ${STRAPI_API_TOKEN_SALT}
+      ADMIN_JWT_SECRET: ${STRAPI_ADMIN_JWT_SECRET}
+      JWT_SECRET: ${STRAPI_JWT_SECRET}
+      TRANSFER_TOKEN_SALT: ${STRAPI_TRANSFER_TOKEN_SALT}
+      ENCRYPTION_KEY: ${STRAPI_ENCRYPTION_KEY}
+      CMS_ADMIN_EMAIL: ${CMS_ADMIN_EMAIL}
+      CMS_ADMIN_PASSWORD: ${CMS_ADMIN_PASSWORD}
+      SITE_API_TOKEN: ${SITE_API_TOKEN}
+      MCP_STRAPI_TOKEN: ${MCP_STRAPI_TOKEN}
+      MIGRACAO_API_TOKEN: ${MIGRACAO_API_TOKEN}
+      SITE_URL: http://localhost:3300
+      PREVIEW_SECRET: ${PREVIEW_SECRET}
+      S3_ENDPOINT: http://rustfs:9000
+      S3_PUBLIC_URL: http://localhost:9900/midia
+      S3_BUCKET: midia
+      S3_REGION: us-east-1
+      S3_ACCESS_KEY_ID: ${S3_ACCESS_KEY}
+      S3_SECRET_ACCESS_KEY: ${S3_SECRET_KEY}
+      STRAPI_URL: http://localhost:1337
+    volumes:
+      - ./cms/src:/opt/app/src
+      - ./cms/config:/opt/app/config
+    depends_on:
+      postgres: { condition: service_healthy }
+      storage-init: { condition: service_completed_successfully }
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:1337/_health >/dev/null || exit 1"]
+      interval: 10s
+      timeout: 20s
+      retries: 40
+      start_period: 90s
+
+  # ── Front (Next.js): cada site no seu domínio (local: <site>.localhost:3300) ─
+  front:
+    build: ./front
+    ports: ["3300:3000"]
+    # FRONT_MODO=producao → build + start (como no deploy); padrão: desenvolvimento (recarrega ao editar)
+    command: ["sh", "-c", "if [ \"$${FRONT_MODO:-dev}\" = producao ]; then npm run build && npm start; else npm run dev; fi"]
+    environment:
+      STRAPI_URL: http://cms:1337
+      SITE_API_TOKEN: ${SITE_API_TOKEN}
+      FRONT_MODO: ${FRONT_MODO:-dev}
+      # Gravação dos formulários no Strapi (token com escrita)
+      FORMULARIOS_API_TOKEN: ${MIGRACAO_API_TOKEN}
+      SITE_PORTA_PUBLICA: "3300"
+      MIDIA_PUBLICA: http://localhost:9900/midia
+      MIDIA_INTERNA: http://rustfs:9000/midia
+    volumes:
+      - ./front/app:/app/app
+      - ./front/lib:/app/lib
+      - ./front/components:/app/components
+      - ./front/widgets:/app/widgets
+      - ./front/public:/app/public
+      - ./front/next.config.ts:/app/next.config.ts
+    depends_on:
+      cms: { condition: service_healthy }
+
+  # ── Banco do CMS ───────────────────────────────────────────────────────────
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapi
+      POSTGRES_DB: strapi
+    volumes: [postgres:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U strapi"]
+      interval: 5s
+      retries: 20
+
+  # ── Documents & Media → armazenamento S3 (RustFS, compatível com S3) ───────
+  rustfs:
+    image: rustfs/rustfs:1.0.3
+    ports: ["9900:9000", "9901:9001"]
+    environment:
+      RUSTFS_ACCESS_KEY: ${S3_ACCESS_KEY}
+      RUSTFS_SECRET_KEY: ${S3_SECRET_KEY}
+      RUSTFS_CONSOLE_ENABLE: "true"
+    volumes: [rustfs:/data]
+
+  storage-init:
+    image: amazon/aws-cli:2.31.0
+    depends_on: [rustfs]
+    environment:
+      AWS_ACCESS_KEY_ID: ${S3_ACCESS_KEY}
+      AWS_SECRET_ACCESS_KEY: ${S3_SECRET_KEY}
+      AWS_DEFAULT_REGION: us-east-1
+    entrypoint: ["sh", "-c"]
+    command:
+      - |
+        S3="aws --endpoint-url http://rustfs:9000"
+        for i in $$(seq 1 30); do
+          $$S3 s3api head-bucket --bucket midia 2>/dev/null && break
+          $$S3 s3 mb s3://midia && break
+          sleep 2
+        done
+        # Leitura pública dos arquivos (imagens do site); escrita só com credencial.
+        $$S3 s3api put-bucket-policy --bucket midia --policy '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":"*","Action":["s3:GetObject"],"Resource":["arn:aws:s3:::midia/*"]}]}'
+
+volumes:
+  postgres:
+  rustfs:

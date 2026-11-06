@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paginas",
+  "info": {
+    "singularName": "pagina",
+    "pluralName": "paginas",
+    "displayName": "Página",
+    "description": "Master page vazia = usa a padrão do site. \"caminho\" é calculado (slug + página pai)."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "required": true
+    },
+    "masterPage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::master-page.master-page"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "regex": "^[^/\\s]+$"
+    },
+    "paginaPai": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pagina.pagina"
+    },
+    "caminho": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.pagina"
+    },
+    "conteudo": {
+      "type": "dynamiczone",
+      "components": [
+        "blocos.banner",
+        "blocos.texto",
+        "blocos.imagem"
+      ]
+    },
+    "esqueleto": {
+      "type": "text"
+    },
+    "css": {
+      "type": "text"
+    },
+    "fragmentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocos.fragmento"
+    },
+    "widgets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocos.widget"
+    },
+    "arquivosTema": {
+      "type": "json"
+    }
+  }
+}

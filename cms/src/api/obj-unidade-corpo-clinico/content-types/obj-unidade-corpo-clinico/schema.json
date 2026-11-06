@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obj_unidade_corpo_clinicos",
+  "info": {
+    "singularName": "obj-unidade-corpo-clinico",
+    "pluralName": "obj-unidade-corpo-clinicos",
+    "displayName": "Unidade Corpo Clinico",
+    "description": "Migrado de \"unidadecorpoclinicos\""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "erc": {
+      "type": "string"
+    },
+    "escopo": {
+      "type": "string"
+    },
+    "categorias": {
+      "type": "json"
+    },
+    "criadoEm": {
+      "type": "datetime"
+    },
+    "modificadoEm": {
+      "type": "datetime"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "crm": {
+      "type": "string"
+    }
+  }
+}

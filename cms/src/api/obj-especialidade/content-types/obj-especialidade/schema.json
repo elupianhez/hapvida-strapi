@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obj_especialidades",
+  "info": {
+    "singularName": "obj-especialidade",
+    "pluralName": "obj-especialidades",
+    "displayName": "Especialidade",
+    "description": "Migrado de \"especialidades\""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "erc": {
+      "type": "string"
+    },
+    "escopo": {
+      "type": "string"
+    },
+    "categorias": {
+      "type": "json"
+    },
+    "criadoEm": {
+      "type": "datetime"
+    },
+    "modificadoEm": {
+      "type": "datetime"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "sites": {
+      "type": "json"
+    },
+    "especialidades": {
+      "type": "json"
+    },
+    "especialidade": {
+      "type": "json"
+    }
+  }
+}

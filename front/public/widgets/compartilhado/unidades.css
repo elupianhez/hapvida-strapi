@@ -1,0 +1,134 @@
+@keyframes spin {
+     from {
+         transform: rotate(0deg);
+     }
+     to {
+         transform: rotate(360deg);
+     }
+ }
+
+ .loader-spin{
+     width: 50px;
+     height: 50px;
+     border: 2px solid var(--primary);
+     border-top-color: transparent;
+     border-radius: 72%;
+     animation: spin 2s linear infinite;
+ }
+
+ .filtro-select{
+     height: 35px;
+     border-width: 1px 0 1px 1px !important;
+     border-color: #5B5B5F33 !important;
+     border-top-left-radius: 3px;
+     border-bottom-left-radius: 3px;
+ }
+
+ .relative.focused {
+     box-shadow: 0px 3px 6px #00000033;
+     position: relative;
+     z-index: 2;
+ }
+
+ .filtro-select input:focus,
+ .filtro-select input:focus-visible {
+     outline: none;
+     box-shadow: none;
+ }
+
+ .filtro-select-button{
+     background: white;
+     height: 35px;
+     border-width: 1px 1px 1px 0;
+     border-style: solid;
+     border-color: #5B5B5F33;
+     border-top-right-radius: 3px;
+     border-bottom-right-radius: 3px;
+     position: relative;
+ }
+
+ .filtro-elementos {
+      height: auto;
+      max-height: 250px;
+      position: absolute;
+      z-index: 2;
+      overflow-y: auto;
+      background: #F5F5F5;
+      border-top: 1px solid #ccc;
+      border-radius: 0px 0px 4px 4px;
+      margin: 0px;
+      min-width: 100%;
+  }
+
+ .filtro-checkbox{
+     width: 20px;
+     height: 20px;
+ }
+
+ .filtro-checkbox:checked {
+   accent-color: var(--primary) !important;
+ }
+
+ .filtro-checkbox-label{
+     text-align: left;
+     font: normal normal normal 16px / 33px Oxygen-Regular;
+     letter-spacing: 0px;
+     color: #5B5B5F;
+     font-size: 16px;
+     position: relative;
+     top: -3px;
+ }
+
+ .filtro-elementos li {
+     cursor: pointer;
+ }
+
+ .filtro-elementos li:hover {
+     color: white;
+     background-color: var(--primary);
+ }
+
+ .loader-overlay {
+     position: fixed;
+     inset: 0;
+     background: #000000E6;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     z-index: 9999;
+ }
+
+ .loader-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 22px;
+     color: #fff;
+     font-size: 16px;
+     line-height: 1.4;
+     text-align: left;
+ }
+
+ .loader-ring {
+     width: 88px;
+     height: 88px;
+     border-radius: 50%;
+     border: 10px solid rgba(255,255,255,0.22);
+     border-top-color: #ffffff;
+     animation: loader-spin 1s linear infinite;
+     display: inline-block;
+ }
+
+ .loader-text {
+     color: #ffffff;
+     white-space: nowrap;
+ }
+
+ @keyframes loader-spin {
+     to { transform: rotate(360deg); }
+ }
+
+ .input-preenchido{
+     border-color: #0435AC !important;
+ }
+

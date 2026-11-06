@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "redirecionamentos",
+  "info": {
+    "singularName": "redirecionamento",
+    "pluralName": "redirecionamentos",
+    "displayName": "Redirecionamento",
+    "description": "Endereço antigo → novo"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site"
+    },
+    "de": {
+      "type": "string",
+      "required": true
+    },
+    "para": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "integer",
+      "default": 301
+    }
+  }
+}

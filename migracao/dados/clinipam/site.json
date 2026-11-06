@@ -1,0 +1,19 @@
+{
+ "chave": "clinipam",
+ "temaCss": [
+  "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css",
+  "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css",
+  "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+ ],
+ "estilosGlobais": [],
+ "scriptsCabeca": [
+  "<script type=\"text/javascript\" src=\"https://cdn.cookielaw.org/consent/2d6c3d15-a7c3-417f-8be5-17dbe84e5493/OtAutoBlock.js\"></script>",
+  "<script src=\"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js\" type=\"text/javascript\" charset=\"UTF-8\" data-domain-script=\"2d6c3d15-a7c3-417f-8be5-17dbe84e5493\"></script>"
+ ],
+ "scriptsCorpo": [],
+ "classesBody": "chrome change-tracking-enabled yui3-skin-sam public-page site ",
+ "htmlAtributos": {
+  "lang": "pt-BR",
+  "class": "ltr"
+ }
+}

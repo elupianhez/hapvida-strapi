@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conteudos",
+  "info": {
+    "singularName": "conteudo",
+    "pluralName": "conteudos",
+    "displayName": "Conteúdo",
+    "description": "Artigos, notícias, banners e cards (conteúdos estruturados)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "estrutura": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::estrutura.estrutura"
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "siteCodigo": {
+      "type": "biginteger"
+    },
+    "escopo": {
+      "type": "string"
+    },
+    "publicadoEm": {
+      "type": "datetime"
+    },
+    "criadoEm": {
+      "type": "datetime"
+    },
+    "modificadoEm": {
+      "type": "datetime"
+    },
+    "categorias": {
+      "type": "json"
+    },
+    "palavrasChave": {
+      "type": "json"
+    },
+    "campos": {
+      "type": "json"
+    },
+    "erc": {
+      "type": "string"
+    }
+  }
+}

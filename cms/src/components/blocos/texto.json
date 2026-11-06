@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocos_texto",
+  "info": {
+    "displayName": "Texto",
+    "icon": "paragraph",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "texto": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

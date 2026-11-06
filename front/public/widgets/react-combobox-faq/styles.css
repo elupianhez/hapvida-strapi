@@ -1,0 +1,48 @@
+@import "./CustomSelect.css";
+@import "./ComboBox.css";
+@import "./FaqList.css";
+@import "./FaqSkeleton.css";
+
+.faq-combobox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 58px 60px 80px 60px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.faq-combobox
+    .content-container{
+        display: flex;
+        width: 100%;
+        max-width: 1294px;
+        height: 100%;
+        position: relative;
+        gap: 127px;
+}
+
+@media (min-width:768px) and (max-width:1399px){
+    .faq-combobox {
+        padding: 58px 24px;
+    }
+
+    .faq-combobox .content-container {
+        flex-direction: column;
+        gap: 48px;
+    }
+}
+
+@media (max-width:767px){
+    .faq-combobox {
+        padding: 58px 16px;
+    }
+
+    .faq-combobox .content-container {
+        flex-direction: column;
+        gap: 48px;
+    }
+}

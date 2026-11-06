@@ -1,0 +1,211 @@
+.portlet-body {
+  background-color: transparent !important;
+}
+
+#tabContent {
+  display: none;
+}
+
+#tabContent.dropdowns_0 {
+  display: block;
+}
+
+.linkVoltar {
+  text-align: left !important;
+  margin-top: 0 !important;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0 !important;
+}
+
+svg.linkVoltar {
+  position: relative;
+  top: 9px;
+}
+
+.linksTopico {
+  margin-top: 40px;
+}
+
+.linksTopico p {
+  text-align: left;
+  font-family: "oxygen-bold";
+  font-size: 16px;
+  color: #1a171b;
+}
+
+.linksTopico a {
+  font-family: "oxygen-bold";
+  margin-left: 5px;
+  font-size: 16px;
+  color: #ec6e0c;
+  text-decoration: underline;
+}
+
+.linksTopico h2 {
+  text-align: center;
+  margin: 45px 0;
+  font-size: 24px;
+  font-family: "oxygen-bold";
+}
+
+.linksTopico .clickshow {
+  text-align: left;
+  font-size: 18px;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 4px 4px 16px rgba(26, 23, 27, 0.1607843137);
+  border-radius: 8px;
+  padding: 30px 20px;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: "oxygen-bold";
+}
+
+.linksTopico .clickshow ul {
+  padding-left: 15px;
+}
+
+.linksTopico .clickshow li {
+  color: #5b5b5f;
+  font-size: 16px;
+  font-family: "oxygen-regular";
+}
+
+.subtextoDuvidas {
+  display: none;
+}
+
+.linksTopico .clickshow_link {
+  float: right;
+}
+
+.campoGuia {
+  text-align: left;
+}
+
+.campoGuia span {
+  color: #1a171b;
+  display: inline-block;
+  font-family: "oxygen-bold";
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+
+.campoGuiaStyle {
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #ec6e0c;
+}
+
+.campoPesquisa h1 {
+  margin-top: 40px;
+}
+
+.linksTopico button {
+  outline: none;
+  color: #ec6e0c;
+  border: 1px solid #ec6e0c;
+  background-color: transparent;
+  margin-top: 32px;
+  border-radius: 7px;
+  width: 251px;
+  height: 44px;
+  margin-bottom: 80px;
+  font-family: "oxygen-bold";
+}
+
+.campoPesquisa svg {
+  margin-right: 10px;
+}
+
+.txtSwipp {
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+}
+
+.txtSwipp a {
+  color: #fff !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  font-family: "oxygen-regular";
+}
+
+.txtSwipp:hover,
+.txtSwipp:hover > a {
+  color: #ec6e0c !important;
+  background-color: #fff !important;
+}
+
+#tabButtons span {
+  cursor: pointer;
+}
+
+.linksTopico button.tab--next,
+.linksTopico button.tab--prev {
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  margin-top: 0;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+  margin-bottom: 0;
+  font-family: "oxygen-bold";
+}
+
+#carrTabs {
+  display: none;
+}
+
+.carousel-item.tab--item {
+  text-align: center;
+}
+
+.tab--item.active .tab--item_span {
+  border-bottom: 4px solid #ec6e0c;
+}
+
+.tab--item .tab--item_span {
+  width: auto;
+  margin: 0 auto;
+}
+
+.carousel-control-next.tab--next,
+.carousel-control-prev.tab--prev {
+  opacity: 0.9;
+}
+
+.carousel-control-next.tab--next .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3Csvg id='direita' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='Grupo_1585' data-name='Grupo 1585' transform='translate(-412 281) rotate(-90)'%3E%3Crect id='ret_356' data-name='ret_356' width='20' height='20' transform='translate(261 412)' fill='none'%3E%3C/rect%3E%3Cpath id='Caminho_382' data-name='Caminho 382' d='M171.476 425.028a.748.748 0 0 1-.559-.25l-5.724-6.4-6.177 6.418a.75.75 0 1 1-1.081-1.04l6.737-7a.75.75 0 0 1 1.1.02l6.263 7a.75.75 0 0 1-.559 1.25Z' transform='translate(435.976 843.778) rotate(180)' fill='%23e7751c'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.carousel-control-prev.tab--prev .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_636_5)'%3E%3Cpath d='M13.2503 3.49948C13.2505 3.60502 13.2282 3.70939 13.1852 3.80574C13.1421 3.90208 13.0791 3.9882 13.0003 4.05847L6.60031 9.78248L13.0183 15.9595C13.0893 16.0278 13.1461 16.1094 13.1856 16.1996C13.225 16.2899 13.2463 16.387 13.2482 16.4855C13.2501 16.584 13.2326 16.6818 13.1967 16.7736C13.1608 16.8653 13.1071 16.949 13.0388 17.02C12.9705 17.0909 12.8889 17.1478 12.7987 17.1872C12.7084 17.2267 12.6113 17.248 12.5128 17.2499C12.4143 17.2518 12.3164 17.2343 12.2247 17.1983C12.133 17.1624 12.0493 17.1088 11.9783 17.0405L4.97833 10.3035C4.90387 10.2319 4.84496 10.1457 4.80536 10.0503C4.76576 9.95493 4.74629 9.85238 4.74817 9.74911C4.75005 9.64584 4.77324 9.54407 4.81629 9.45018C4.85933 9.35629 4.9213 9.27229 4.99832 9.20347L11.9983 2.94047C12.1062 2.84395 12.2398 2.78073 12.3828 2.75843C12.5259 2.73614 12.6723 2.75573 12.8045 2.81483C12.9367 2.87394 13.0489 2.97003 13.1277 3.09152C13.2064 3.21301 13.2483 3.3547 13.2483 3.49948L13.2503 3.49948Z' fill='%23E7751C'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_636_5'%3E%3Crect width='20' height='20' fill='white' transform='translate(20 20) rotate(180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+@media (max-width: 600px) {
+  #carrTabs {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .mb--hidden {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .campoGuia span {
+    margin-right: 22px;
+  }
+  .bgPesquisa > div {
+    padding-left: 0 !important;
+  }
+  .linksTopico .clickshow_link {
+    float: none;
+    display: block;
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,139 @@
+:root{
+    .categories-wrapper .arrow-left{
+        display: inline-block;
+        background-color: #fff;
+        height: 20px;
+        width: 20px;
+        flex-shrink: 0;
+        mask: url('data:image/svg+xml,%3Csvg%20id%3D%22direita%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%20id%3D%22Group_1585%22%20data-name%3D%22Group%201585%22%20transform%3D%22translate(20%200)%20rotate(90)%22%3E%3Crect%20id%3D%22Rectangle_356%22%20data-name%3D%22Rectangle%20356%22%20width%3D%2220%22%20height%3D%2220%22%20fill%3D%22none%22%2F%3E%3Cpath%20id%3D%22Path_382%22%20data-name%3D%22Path%20382%22%20d%3D%22M0%2C7%2C6.737%2C0%2C13%2C7%22%20transform%3D%22translate(16.5%2014.5)%20rotate(180)%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center / contain;
+        -webkit-mask: url('data:image/svg+xml,%3Csvg%20id%3D%22direita%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%20id%3D%22Group_1585%22%20data-name%3D%22Group%201585%22%20transform%3D%22translate(20%200)%20rotate(90)%22%3E%3Crect%20id%3D%22Rectangle_356%22%20data-name%3D%22Rectangle%20356%22%20width%3D%2220%22%20height%3D%2220%22%20fill%3D%22none%22%2F%3E%3Cpath%20id%3D%22Path_382%22%20data-name%3D%22Path%20382%22%20d%3D%22M0%2C7%2C6.737%2C0%2C13%2C7%22%20transform%3D%22translate(16.5%2014.5)%20rotate(180)%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center / contain;
+    }
+
+    .categories-wrapper .arrow-right{
+        display: inline-block;
+        background-color: #fff;
+        height: 20px;
+        width: 20px;
+        flex-shrink: 0;
+        mask: url('data:image/svg+xml,%3Csvg%20id%3D%22direita%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%20id%3D%22Group_1585%22%20data-name%3D%22Group%201585%22%20transform%3D%22translate(20%200)%20rotate(90)%22%3E%3Crect%20id%3D%22Rectangle_356%22%20data-name%3D%22Rectangle%20356%22%20width%3D%2220%22%20height%3D%2220%22%20transform%3D%22translate(0%200)%22%20fill%3D%22none%22%2F%3E%3Cpath%20id%3D%22Path_382%22%20data-name%3D%22Path%20382%22%20d%3D%22M0%2C0%2C6.737%2C7%2C13%2C0%22%20transform%3D%22translate(16.5%2012.5)%20rotate(180)%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center / contain;
+        -webkit-mask: url('data:image/svg+xml,%3Csvg%20id%3D%22direita%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cg%20id%3D%22Group_1585%22%20data-name%3D%22Group%201585%22%20transform%3D%22translate(20%200)%20rotate(90)%22%3E%3Crect%20id%3D%22Rectangle_356%22%20data-name%3D%22Rectangle%20356%22%20width%3D%2220%22%20height%3D%2220%22%20transform%3D%22translate(0%200)%22%20fill%3D%22none%22%2F%3E%3Cpath%20id%3D%22Path_382%22%20data-name%3D%22Path%20382%22%20d%3D%22M0%2C0%2C6.737%2C7%2C13%2C0%22%20transform%3D%22translate(16.5%2012.5)%20rotate(180)%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center / contain;
+    }
+}
+
+
+.categories-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 598px;
+    overflow: hidden;
+    position: relative;
+}
+
+.categories-wrapper .categories-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1288px;
+
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+
+}
+
+.categories-wrapper .categories-controls .categories-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21px;
+    height: 33px;
+    background: #ACACAC 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0435AC33;
+    border-radius: 3px;
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+    pointer-events: all;
+
+}
+
+.categories-wrapper .categories-controls .categories-arrow:not(.disabled){
+    background: #2D2D2D 0% 0% no-repeat padding-box;
+}
+
+.categories-wrapper .categories-track-wrapper {
+    width: 100%;
+    max-width: 1288px;
+}
+
+.categories-wrapper .categories-track {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.categories-wrapper .categories-track-wrapper.overflow .categories-track {
+    padding: 0px 32px;
+}
+
+
+.categories-wrapper .categories-track .categories-tag {
+    display: flex;
+    width: fit-content;
+    padding: 7px 14px;
+    flex-shrink: 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #5B5B5F66;
+    border-radius: 3px;
+    box-shadow: 0px 3px 6px #0435AC33;
+
+    font-family: 'oxygen-regular', system-ui;
+    color: #5B5B5F;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    align-self: center;
+}
+
+.categories-wrapper .categories-track .categories-skeleton {
+    width: 100px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: linear-gradient(
+        90deg,
+        #f2f2f2 25%,
+        #e0e0e0 50%,
+        #f2f2f2 75%
+    );
+    background-size: 400% 100%;
+    animation: skeleton-loading 1.4s ease infinite;
+    box-shadow: 0px 3px 6px #0435AC33;
+}
+
+.categories-wrapper .categories-track .categories-tag.active,
+.categories-wrapper .categories-track .categories-tag:hover {
+    color: #0435AC;
+    font-weight: 700;
+    border: 1px solid #0435AC;
+}
+
+.categories-wrapper .categories-track::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes skeleton-loading {
+    0%   { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+@media (max-width:1280px) {
+    .categories-wrapper {
+        max-width: inherit;
+    }
+}

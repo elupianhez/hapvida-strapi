@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_navegacao_botao",
+  "info": {
+    "displayName": "Botão",
+    "icon": "cursor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "rotulo": {
+      "type": "string",
+      "required": true
+    },
+    "pagina": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pagina.pagina"
+    },
+    "urlExterna": {
+      "type": "string"
+    },
+    "novaAba": {
+      "type": "boolean",
+      "default": false
+    },
+    "estilo": {
+      "type": "enumeration",
+      "enum": [
+        "primario",
+        "secundario"
+      ],
+      "default": "primario"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+/*
+ * Design tokens por marca (substitui Themes / Style Books do Liferay).
+ * A marca vem do single type "Aparência" no Strapi → <html data-brand="...">.
+ * Cores aproximadas, apenas para demonstração.
+ */
+:root {
+  --background: #ffffff;
+  --foreground: #1b2430;
+  --card: #f4f6f9;
+  --border: #e2e7ee;
+  --muted-foreground: #5b6675;
+  --primary: #f26a1b;
+  --primary-foreground: #ffffff;
+  --brand-escuro: #0b2e5c;
+}
+
+[data-brand='hapvida'] {
+  --primary: #f26a1b; /* laranja */
+  --brand-escuro: #0b2e5c; /* azul-marinho */
+}
+
+[data-brand='ndi'] {
+  --primary: #0b5cad; /* azul */
+  --brand-escuro: #08213f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  }
+  * {
+    @apply border-border;
+  }
+}
+
+@utility container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: 80rem;
+  @media (width >= 48rem) {
+    padding-inline: 2rem;
+  }
+}

@@ -1,0 +1,306 @@
+/* =============================================
+   React Unidades Presencial - Estilos
+   ============================================= */
+
+.canais-presencial.custom-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+.canais-filters-row {
+    margin-bottom: 24px;
+    max-width: 420px;
+}
+
+.canais-presencial .total-itens {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'oxygen-regular', 'system-ui';
+    color: #5B5B5F;
+    text-align: right;
+    line-height: 33px;
+}
+
+
+.canais-presencial .custom-pagination {
+    padding-top: 10px;
+}
+
+.canais-presencial .articles-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+
+.card-canais {
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    min-height: 300px;
+    box-sizing: border-box;
+    font-family: 'oxygen-regular', 'system-ui';
+}
+
+.card-estado {
+    color: var(--color-trust, #0435AC);
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'oxygen-bold', 'system-ui';
+    padding-bottom: 10px;
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+    line-height: 25px;
+}
+
+.card-estado::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 154px;
+    height: 0;
+    border-bottom: 1px solid #5B5B5F66;
+}
+
+.card-unidade-title {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'oxygen-bold', 'system-ui';
+    color: var(--color-high-contrast, #000);
+    margin: 0;
+    line-height: 30px;
+}
+
+.card-info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.card-info {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'oxygen-regular', 'system-ui';
+    color: var(--color-text-body, #5B5B5FE6);
+    margin: 0;
+    line-height: 26px;
+}
+
+.card-info strong {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'oxygen-bold', 'system-ui';
+    color: var(--color-text-body, #5B5B5FE6);
+}
+
+.fallback-title {
+    font-size: 20px;
+    font-family: 'oxygen-bold', 'system-ui';
+    font-weight: 700;
+    color: #000000;
+    margin: 58px 0 30px;
+    text-align: left;
+    letter-spacing: 0px;
+    opacity: 1;
+    line-height: 42px;
+}
+
+.canais-presencial .empty-result {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    padding: 0px 0 8px;
+}
+
+.canais-presencial .sub-empty-result {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+
+.results-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.voltar-localizacao {
+    font-size: 16px;
+    text-align: left;
+    text-decoration: underline;
+    font-family: 'oxygen-bold', 'system-ui';
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #0435AC;
+    opacity: 1;
+    line-height: 14px;
+}
+
+.voltar-exibindo-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.unidades-list .dynamic-list-empty {
+    text-align: left !important;
+    align-items: flex-start !important;
+}
+
+.results-title {
+    font-size: 24px;
+    font-family: 'oxygen-bold', 'system-ui';
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 30px;
+    line-height: 42px;
+}
+
+.unidades-list .empty-result {
+    font-size: 20px;
+    font-family: 'oxygen-bold', 'system-ui';
+    text-align: left;
+    color: #000000;
+    opacity: 1;
+    line-height: 42px;
+}
+
+.unidades-list .sub-empty-result {
+    font-size: 16px;
+    text-align: left;
+    font-family: 'oxygen-regular', 'system-ui';
+    letter-spacing: 0px;
+    color: #5B5B5F;
+    opacity: 1;
+    line-height: 24px;
+}
+
+@media (min-width: 744px) and (max-width: 1280px) {
+
+    .card-canais {
+        min-height: 239px;
+    }
+
+    .card-unidade-title {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .card-info {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .canais-presencial .articles-list {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .canais-presencial .empty-result {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .canais-presencial .sub-empty-result {
+        font-size: 14px;
+        line-height: 24px;
+        padding-top: 20px !important;
+    }
+
+
+    .results-title {
+        font-size: 20px;
+        margin: 0px 0px 30px 0px;
+    }
+
+    .voltar-exibindo-row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    
+    .fallback-title {
+        font-size: 20px;
+        line-height: 42px;
+        margin: 36px 0 30px;
+    }
+
+    .card-estado {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 743px) {
+    .card-canais {
+        min-height: 300px;
+    }
+
+    .card-unidade-title {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .card-info {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .canais-presencial .articles-list {
+        grid-template-columns: 1fr;
+    }
+
+    .canais-presencial .empty-result {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .canais-presencial .sub-empty-result {
+        font-size: 14px;
+        line-height: 24px;
+        padding-top: 20px !important;
+    }
+
+    .canais-filters-row {
+        max-width: 100%;
+    }
+
+    .results-title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0px 0px 30px 0px;
+    }
+
+    .voltar-exibindo-row {
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 30px;
+        gap: 22px;
+    }
+
+    .fallback-title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 30px 0 30px;
+    }
+
+    .card-estado {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

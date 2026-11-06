@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estruturas",
+  "info": {
+    "singularName": "estrutura",
+    "pluralName": "estruturas",
+    "displayName": "Estrutura de conteúdo",
+    "description": "Tipo de conteúdo editorial (artigo, banner, card...) e seus campos"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "escopo": {
+      "type": "string"
+    },
+    "campos": {
+      "type": "json"
+    }
+  }
+}

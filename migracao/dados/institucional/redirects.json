@@ -1,0 +1,107 @@
+[
+ {
+  "caminho": "/institucional/sustentabilidade",
+  "destino": "https://ri.hapvida.com.br/governanca-corporativa/sustentabilidade/",
+  "status": 301
+ },
+ {
+  "caminho": "/nossos-planos",
+  "destino": "/planos-de-saude-individuais",
+  "status": 302
+ },
+ {
+  "caminho": "/odonto-para-voce",
+  "destino": "https://www.gndi.com.br/",
+  "status": 301
+ },
+ {
+  "caminho": "/planos-de-saude-individuais",
+  "destino": "http://www.gndi.com.br/planos-de-saude-individuais",
+  "status": 301
+ },
+ {
+  "caminho": "/planos-de-saude-individuais/pleno",
+  "destino": "https://www.gndi.com.br/",
+  "status": 302
+ },
+ {
+  "caminho": "/planos-de-saude-empresariais/premium/premium-800",
+  "destino": "https://www.gndi.com.br/planos-de-saude-empresariais/premium",
+  "status": 301
+ },
+ {
+  "caminho": "/servicos",
+  "destino": "https://www.gndi.com.br/",
+  "status": 301
+ },
+ {
+  "caminho": "/serviço",
+  "destino": "/beneficiario/teleconsulta",
+  "status": 302
+ },
+ {
+  "caminho": "/odontologia-preventiva",
+  "destino": "https://www.gndi.com.br",
+  "status": 301
+ },
+ {
+  "caminho": "/atendimentos",
+  "destino": "/atendimento/saude",
+  "status": 302
+ },
+ {
+  "caminho": "/interclube",
+  "destino": "https://clube.hapvidandi.com.br",
+  "status": 301
+ },
+ {
+  "caminho": "/atendimento/ouvidoria_old",
+  "destino": "https://www.gndi.com.br/atendimento/ouvidoria",
+  "status": 302
+ },
+ {
+  "caminho": "/embedded",
+  "destino": "/embedded/perguntas-frequentes",
+  "status": 302
+ },
+ {
+  "caminho": "/atualizacao-de-rede",
+  "destino": "https://www2.gndi.com.br/atualizacao-de-rede",
+  "status": 301
+ },
+ {
+  "caminho": "/agendar-consulta",
+  "destino": "https://www.gndi.com.br/",
+  "status": 301
+ },
+ {
+  "caminho": "/rede-de-atendimento",
+  "destino": "https://www2.gndi.com.br/pesquisa-de-rede",
+  "status": 301
+ },
+ {
+  "caminho": "/pesquisa-de-rede",
+  "destino": "https://www2.gndi.com.br/pesquisa-de-rede",
+  "status": 301
+ },
+ {
+  "caminho": "/cirurgias",
+  "destino": "/cirurgia/sao-paulo",
+  "status": 302
+ },
+ {
+  "caminho": "/cartao-da-gestante",
+  "destino": "{{m:/documents/5787792/7763571/PUB-0821-24-W_GESTAR%20BEM-CARTAO%20PRE-NATAL%20DA%20GESTANTES_V2%20-%20NOTREDAME%20DIGITAL.pdf/7f618e24-a7eb-d5ef-69ce-3f6570a6160b?t=1746564976648}}",
+  "status": 302
+ },
+ {
+  "caminho": "/teste",
+  "destino": "https://www.gndi.com.br",
+  "status": 301
+ },
+ {
+  "caminho": "/destaques",
+  "destino": "/linha-de-cuidado-em-endometriose",
+  "status": 302
+ }
+]

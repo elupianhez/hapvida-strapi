@@ -1,0 +1,27 @@
+[
+ {
+  "caminho": "/nossos-planos",
+  "destino": "/planos-de-saude/diferenciais",
+  "status": 302
+ },
+ {
+  "caminho": "/atendimento",
+  "destino": "/atendimento/saude",
+  "status": 302
+ },
+ {
+  "caminho": "/servico",
+  "destino": "/aplicativo",
+  "status": 302
+ },
+ {
+  "caminho": "/minha-área",
+  "destino": "/beneficiario",
+  "status": 302
+ },
+ {
+  "caminho": "/embedded",
+  "destino": "/embedded/duvidas-frequentes",
+  "status": 302
+ }
+]

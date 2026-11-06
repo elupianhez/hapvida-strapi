@@ -1,0 +1,327 @@
+.benefits-comparison-wrapper {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits-table {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    margin: 0;
+    scrollbar-width: none;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    empty-cells: show;
+    border-spacing: 30px 0;
+    margin-left: -30px;
+}
+
+.comparison-table thead {
+    background: transparent;
+}
+
+/* Células base */
+.comparison-table th,
+.comparison-table td {
+    padding: 16px;
+}
+
+/* Cabeçalho */
+.comparison-table th {
+    text-align: left;
+    color: var(--color-high-contrast, #000);
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.comparison-table .benefit-header {
+    background: transparent;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.comparison-table .plan-header {
+    text-align: center;
+    color: var(--color-high-contrast, #000000);
+}
+
+
+.comparison-table .plan-titles-row th {
+    padding: 24px 32px;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: none;
+}
+
+.comparison-table:not(.has-selected) .plan-titles-row th {
+    padding-top: 32px;
+    border-radius: 8px 8px 0 0;
+}
+
+.comparison-table .plan-titles-row th.plan-header {
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+}
+
+/* Benefícios */
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+    width: 100%;
+    min-width: 320px;
+}
+
+/* Planos */
+.comparison-table th:not(:first-child),
+.comparison-table td:not(:first-child) {
+    background: #F5F5F5;
+    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
+}
+
+/* Fecha o "cartão" de cada coluna de plano na última linha */
+.comparison-table tbody tr:last-child td:not(:first-child) {
+    border-radius: 0px 0px 8px 8px;
+}
+
+/* Plano Selecionado — só quando a tabela tem .has-selected */
+.comparison-table.has-selected th:nth-child(2),
+.comparison-table.has-selected td:nth-child(2) {
+    border-left: 1px solid var(--color-trust, #0435AC);
+    border-right: 1px solid var(--color-trust, #0435AC);
+}
+
+.comparison-table.has-selected thead tr:first-child th:nth-child(2) {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.comparison-table.has-selected tbody tr:last-child td:nth-child(2) {
+    border-bottom: 1px solid var(--color-trust, #0435AC);
+}
+
+/* Corpo da tabela */
+.comparison-table tbody tr {
+    border-bottom: 1px solid #E0E0E0;
+    transition: background 0.2s ease;
+}
+
+.comparison-table tbody tr td {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table tbody tr:hover td {
+    background: #E8E8E8;
+}
+
+.comparison-table td {
+    color: var(--color-text-body, #5B5B5F);
+}
+
+.comparison-table .benefit-name {
+    color: var(--color-text-body, #5B5B5F);
+}
+
+.comparison-table .benefit-name:hover {
+    cursor: pointer;
+    color: var(--color-trust, #0435AC);
+}
+
+.comparison-table .benefit-status {
+    text-align: center;
+    color: var(--color-text-body, #5B5B5F);
+}
+
+.comparison-table .check-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+    align-self: center;
+    background: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22%3E%3Cpath d=%22m8.6 14.6 7.05-7.05-1.4-1.4L8.6 11.8 5.75 8.95l-1.4 1.4ZM10 20a9.736 9.736 0 0 1-3.9-.788 10.1 10.1 0 0 1-3.175-2.137A10.1 10.1 0 0 1 .788 13.9 9.737 9.737 0 0 1 0 10a9.738 9.738 0 0 1 .788-3.9 10.1 10.1 0 0 1 2.137-3.175A10.1 10.1 0 0 1 6.1.787 9.739 9.739 0 0 1 10 0a9.739 9.739 0 0 1 3.9.787 10.1 10.1 0 0 1 3.175 2.138A10.1 10.1 0 0 1 19.213 6.1 9.738 9.738 0 0 1 20 10a9.737 9.737 0 0 1-.787 3.9 10.1 10.1 0 0 1-2.138 3.175 10.1 10.1 0 0 1-3.175 2.137A9.736 9.736 0 0 1 10 20Z%22 fill=%22%230435ac%22/%3E%3C/svg%3E');
+}
+
+.comparison-table .cancel-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+    align-self: center;
+    background: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22%3E%3Cpath d=%22m6.4 15 3.6-3.6 3.6 3.6 1.4-1.4-3.6-3.6L15 6.4 13.6 5 10 8.6 6.4 5 5 6.4 8.6 10 5 13.6Zm3.6 5a9.737 9.737 0 0 1-3.9-.787 10.1 10.1 0 0 1-3.175-2.137 10.1 10.1 0 0 1-2.137-3.175A9.737 9.737 0 0 1 0 10a9.739 9.739 0 0 1 .788-3.9 10.1 10.1 0 0 1 2.137-3.175A10.1 10.1 0 0 1 6.1.787 9.738 9.738 0 0 1 10 0a9.738 9.738 0 0 1 3.9.788 10.1 10.1 0 0 1 3.175 2.138 10.1 10.1 0 0 1 2.137 3.175A9.738 9.738 0 0 1 20 10a9.737 9.737 0 0 1-.787 3.9 10.1 10.1 0 0 1-2.137 3.175 10.1 10.1 0 0 1-3.175 2.137A9.737 9.737 0 0 1 10 20Z%22 fill=%22%23ff222b%22/%3E%3C/svg%3E');
+}
+
+/* Texto informativo */
+.comparison-table .benefit-info {
+    display: inline-block;
+    color: var(--color-text-body, #5B5B5F);
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Tag Plano Selecionado */
+
+.comparison-table .selected-plan-label-row th {
+    border-bottom: none;
+    padding: 0 20px;
+    background: transparent;
+}
+
+.comparison-table .selected-plan-label {
+    text-align: center;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.comparison-table .selected-label-text {
+    display: block;
+    color: var(--color-default, #FFFFFF);
+    border-radius: 3px 3px 0px 0px;
+    padding: 10px;
+    background: #0435AC 0% 0% no-repeat padding-box;
+    font-size: 14px;
+    height: fit-content;
+    font-weight: 600;
+}
+
+.table-navigation {
+    display: none;
+    width: fit-content;
+    align-self: flex-end;
+    margin-top: 36px;
+    gap: 16px;
+}
+
+.table-navigation.show {
+    display: inline-flex;
+}
+
+.table-navigation .table-nav-button {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    background: #2D2D2D 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0435AC33;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0;
+}
+
+body.contraste-body .table-navigation .table-nav-button {
+    border: 1px solid #ff0 !important;
+}
+
+.table-navigation .table-nav-button:focus {
+    outline: 5px auto var(--color-trust, #0435AC);
+}
+
+.table-navigation .table-nav-button[disabled] {
+    background: #ACACAC 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0435AC33;
+    cursor: not-allowed;
+}
+
+.table-navigation .table-nav-button.scroll-left-btn::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%208.81%2015.119%22%3E%3Cpath%20id%3D%22Path_382%22%20data-name%3D%22Path%20382%22%20d%3D%22M0%2C7%2C6.737%2C0%2C13%2C7%22%20transform%3D%22translate(0.75%2014.059)%20rotate(-90)%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.table-navigation .table-nav-button.scroll-right-btn::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%208.81%2015.119%22%3E%3Cpath%20id%3D%22Path_12266%22%20data-name%3D%22Path%2012266%22%20d%3D%22M0%2C7%2C6.737%2C0%2C13%2C7%22%20transform%3D%22translate(8.06%201.06)%20rotate(90)%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+@media (min-width: 744px) and (max-width: 1280px) {
+    .benefits-table {
+        margin: 0;
+    }
+
+    .comparison-table {
+        border-spacing: 20px 0;
+        margin-left: -20px;
+    }
+
+    .comparison-table .selected-plan-label-row th {
+        padding: 0 10px !important;
+    }
+
+    .comparison-table th:first-child,
+    .comparison-table td:first-child {
+        min-width: 220px;
+    }
+
+    .comparison-table th:not(:first-child),
+    .comparison-table td:not(:first-child) {
+        width: 140px;
+        min-width: 140px;
+        max-width: 140px;
+    }
+
+    .comparison-table .plan-titles-row th {
+        padding: 20px 16px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 12px;
+    }
+}
+
+
+@media (max-width: 743px) {
+    .benefits-table {
+        margin: 0;
+    }
+
+    .comparison-table {
+        border-spacing: 16px 0;
+        margin-left: -16px;
+    }
+
+    .comparison-table .selected-plan-label-row th {
+        padding: 0 10px;
+    }
+
+    .comparison-table th:first-child,
+    .comparison-table td:first-child {
+        min-width: 160px;
+    }
+
+    .comparison-table th:not(:first-child),
+    .comparison-table td:not(:first-child) {
+        width: 120px;
+        min-width: 120px;
+        max-width: 120px;
+    }
+
+    .comparison-table .plan-titles-row th {
+        padding: 16px 12px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 10px;
+    }
+}

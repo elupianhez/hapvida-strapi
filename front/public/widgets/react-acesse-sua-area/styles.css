@@ -1,0 +1,100 @@
+@import "./tags-content.css";
+@import "./cards-content.css";
+
+.portlet-content,
+.portlet-header {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+.visit-your-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    background: var(--Colour-ranges-Absolute-Shades-absolute-shade-0, #FFF);
+}
+
+.visit-your-area
+ .content-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    width: 982px;
+    max-width: 1440px;
+    gap: 32px;
+}
+
+
+.visit-your-area
+ .content-container
+        .text-content{
+            display: flex;
+            flex-direction: column;
+            gap: 8px
+}
+
+.visit-your-area
+ .content-container
+     .title-content {
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        margin: 0;
+        overflow: hidden;
+        font-size: var(--Degular-Heading-Tags-H2, 32px);
+        font-weight: 600;
+        font-family: 'oxygen-regular', var(--font-family-figtree, Figtree), sans-serif;
+        color: var(--Colour-ranges-Absolute-Shades-absolute-1000, #000);
+
+}
+
+
+.visit-your-area
+ .content-container
+     .subtext-content{
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        margin: 0;
+        overflow: hidden;
+        font-size: var(--Figtree-Paragraphs-Paragraph-S, 16px);
+        font-weight: 400;
+        font-family: 'oxygen-regular', var(--font-family-figtree, Figtree), sans-serif;
+        color: var(--Colour-ranges-Absolute-Shades-absolute-600, #555);
+}
+
+@media (max-width:1399px){
+    .visit-your-area{
+        width: 100%;
+    }
+
+    .visit-your-area
+     .content-container{
+        width: 100%;
+        gap: 24px
+     }
+
+    .visit-your-area
+     .content-container
+         .title-content {
+            font-size: var(--Figtree-Heading-Tags-H2, 24px);
+            -webkit-line-clamp: 2;
+     }
+
+     .visit-your-area
+      .content-container
+          .subtext-content{
+            font-size: var(--Figtree-Paragraphs-Paragraph-S, 16px);
+            -webkit-line-clamp: 2;
+      }
+
+}
+

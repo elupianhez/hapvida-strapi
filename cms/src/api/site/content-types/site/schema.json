@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sites",
+  "info": {
+    "singularName": "site",
+    "pluralName": "sites",
+    "displayName": "Site",
+    "description": "Cada marca/portal. O domínio identifica o site no front-end."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "dominio": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z0-9.-]+(:[0-9]+)?$"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "favicon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "marca": {
+      "type": "enumeration",
+      "enum": [
+        "hapvida",
+        "ndi"
+      ],
+      "default": "hapvida",
+      "required": false
+    },
+    "paginaInicial": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pagina.pagina"
+    },
+    "masterPagePadrao": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::master-page.master-page"
+    },
+    "seoPadrao": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.padrao-site"
+    },
+    "chave": {
+      "type": "string",
+      "unique": true
+    },
+    "arquivosTema": {
+      "type": "json"
+    },
+    "estilosGlobais": {
+      "type": "json"
+    },
+    "scriptsCabeca": {
+      "type": "text"
+    },
+    "scriptsCorpo": {
+      "type": "text"
+    },
+    "classesBody": {
+      "type": "string"
+    },
+    "idioma": {
+      "type": "string",
+      "default": "pt-BR"
+    },
+    "codigo": {
+      "type": "biginteger"
+    },
+    "configuracoes": {
+      "type": "json"
+    }
+  }
+}

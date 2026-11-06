@@ -1,0 +1,48 @@
+.wrapper-barra {
+    position: relative;
+    width: 100%
+}
+
+.barra-input {
+    width: 100%;
+    height: 44px;
+    padding: 0 55px 0 16px;
+    font-size: 16px;
+    border: 1px solid #5B5B5F33;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 4px 4px 16px #00000026;
+    color: #6b6b6b;
+    font-family: "oxygen-regular";
+}
+
+.barra-search-button {
+    position: absolute;
+    right: 4px;
+    top: 54%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.wrapper-barra.PpoMode .barra-input {
+    padding: 0 16px 0 50px;
+    font-family: var(--font-family-figtree, Figtree);
+}
+
+.wrapper-barra.PpoMode .barra-search-button {
+    left: 0;
+    right: auto;
+}
+
+.wrapper-barra.PpoMode svg circle[data-name="Ellipse 160"] {
+    fill: none;
+}
+
+.wrapper-barra.PpoMode svg g[data-name="Group 1412"] path {
+    stroke: #222222;
+}

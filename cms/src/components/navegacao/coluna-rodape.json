@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_navegacao_coluna_rodape",
+  "info": {
+    "displayName": "Coluna do rodapé",
+    "icon": "layout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu.menu"
+    }
+  }
+}

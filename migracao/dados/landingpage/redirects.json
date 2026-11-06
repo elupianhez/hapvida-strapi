@@ -1,0 +1,12 @@
+[
+ {
+  "caminho": "/smart",
+  "destino": "https://lp.hapvida.com.br/plano-empresarial/nano",
+  "status": 302
+ },
+ {
+  "caminho": "/advance-premium",
+  "destino": "https://lp.notredame.com.br/planos-premium",
+  "status": 302
+ }
+]

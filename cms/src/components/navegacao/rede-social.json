@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_navegacao_rede_social",
+  "info": {
+    "displayName": "Rede social",
+    "icon": "earth",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "rede": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "instagram",
+        "linkedin",
+        "youtube",
+        "x",
+        "tiktok",
+        "whatsapp"
+      ],
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vocabularios",
+  "info": {
+    "singularName": "vocabulario",
+    "pluralName": "vocabularios",
+    "displayName": "Vocabulário",
+    "description": "Grupo de categorias (temas, anos, tipos de notícia...)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "erc": {
+      "type": "string"
+    },
+    "escopo": {
+      "type": "string"
+    }
+  }
+}

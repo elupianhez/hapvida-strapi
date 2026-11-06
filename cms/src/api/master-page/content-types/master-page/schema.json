@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "master_pages",
+  "info": {
+    "singularName": "master-page",
+    "pluralName": "master-pages",
+    "displayName": "Master page",
+    "description": "Estrutura comum: cabeçalho, rodapé e faixas fixas em volta do conteúdo da página"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "required": true
+    },
+    "cabecalho": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::cabecalho.cabecalho"
+    },
+    "rodape": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::rodape.rodape"
+    },
+    "antesDoConteudo": {
+      "type": "dynamiczone",
+      "components": [
+        "blocos.banner",
+        "blocos.texto",
+        "blocos.imagem"
+      ]
+    },
+    "depoisDoConteudo": {
+      "type": "dynamiczone",
+      "components": [
+        "blocos.banner",
+        "blocos.texto",
+        "blocos.imagem"
+      ]
+    },
+    "chave": {
+      "type": "string"
+    },
+    "esqueleto": {
+      "type": "text"
+    },
+    "fragmentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocos.fragmento"
+    },
+    "widgets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocos.widget"
+    }
+  }
+}

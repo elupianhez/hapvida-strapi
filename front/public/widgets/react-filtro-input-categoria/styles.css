@@ -1,0 +1,114 @@
+.news-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  font-family: inherit;
+}
+
+.news-filter-bar__search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #d9dadf;
+  border-radius: 12px;
+  padding: 14px 18px;
+  max-width: 640px;
+  height: 44px;
+}
+
+.news-filter-bar__search-icon {
+  flex-shrink: 0;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.news-filter-bar__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #1a1a1a;
+  background: transparent;
+}
+
+.news-filter-bar__input::placeholder {
+  color: #8a8b93;
+}
+
+.news-filter-bar__chips {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 10px;
+  padding-bottom: 4px;
+  /*padding-left: 16px;*/
+  padding-right: 16px;
+  scrollbar-width: none;
+}
+
+.news-filter-bar__chips::-webkit-scrollbar {
+  display: none;
+}
+
+.news-filter-bar__chip {
+  flex: 0 0 auto;
+  border-radius: 8px;
+  border: 1px solid #d9dadf;
+  background: #f4f4f6;
+  color: #1a1a1a;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease,
+  color 0.15s ease;
+  white-space: nowrap;
+  max-width: 140px;
+  height: 29px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news-filter-bar__chip:hover {
+  background: #e9e9ec;
+}
+
+.news-filter-bar__chip:focus-visible {
+  outline: 2px solid #1d4ed8;
+  outline-offset: 2px;
+}
+
+.news-filter-bar__chip.is-selected {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.news-filter-bar__chips-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+  max-width: 640px;
+}
+
+.news-filter-bar__chips-label {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.news-filter-bar__chips-button{
+    display: block;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .news-filter-bar__chips {
+    scroll-behavior: auto;
+  }
+}

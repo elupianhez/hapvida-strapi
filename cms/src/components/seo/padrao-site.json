@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_seo_padrao_site",
+  "info": {
+    "displayName": "SEO padrão do site",
+    "icon": "search",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sufixoTitulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text",
+      "maxLength": 160
+    },
+    "imagemCompartilhamento": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

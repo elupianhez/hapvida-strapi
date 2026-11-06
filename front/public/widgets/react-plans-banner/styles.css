@@ -1,0 +1,56 @@
+@import "./CustomSelect.css";
+@import "./PlanBannerSidebar.css";
+@import "./PlanDetailPanel.css";
+@import "./PlanTabsNav.css";
+@import "./PlanComparisonTable.css";
+@import "./PlanBannerSkeleton.css";
+
+
+.portlet,
+.portlet-content,
+.portlet-header {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.plans-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    padding: 58px 0;
+}
+
+
+.plans-banner__content{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    max-width: 1285px;
+    gap: 36px;
+}
+
+@media (min-width:744px) and (max-width: 1280px){
+    .plans-banner {
+        padding: 36px 30px;
+    }
+
+    .plans-banner__content {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width:743px){
+    .plans-banner {
+            padding: 48px 15px;
+    }
+
+   .plans-banner__content {
+        flex-direction: column;
+        gap: 46px;
+    }
+}

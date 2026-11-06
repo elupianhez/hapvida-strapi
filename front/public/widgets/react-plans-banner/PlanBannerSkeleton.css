@@ -1,0 +1,111 @@
+@keyframes plans-banner-shimmer {
+    0% {
+        background-position: -400px 0;
+    }
+    100% {
+        background-position: 400px 0;
+    }
+}
+
+.plans-banner__skeleton-block {
+    background: linear-gradient(
+        90deg,
+        #EAEAEA 25%,
+        #F5F5F5 37%,
+        #EAEAEA 63%
+    );
+    background-size: 800px 100%;
+    animation: plans-banner-shimmer 1.4s ease-in-out infinite;
+    border-radius: 4px;
+}
+
+/* Sidebar */
+.plans-banner__skeleton-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 438px;
+    height: fit-content;
+    border-radius: 1px;
+    background: var(--neutrals-details, #F5F5F5);
+    flex-shrink: 0;
+}
+
+.plans-banner__skeleton-sidebar-image {
+    width: 440.05px;
+    height: 185.742px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 60px 0px;
+}
+
+.plans-banner__skeleton-sidebar-content {
+    display: flex;
+    flex-direction: column;
+    padding: 26px 20px 30px 20px;
+    gap: 20px;
+}
+
+.plans-banner__skeleton-select-label {
+    width: 70%;
+    height: 20px;
+}
+
+.plans-banner__skeleton-select-input {
+    width: 100%;
+    height: 44px;
+    border-radius: 6px;
+}
+
+.plans-banner__skeleton-tabs-title {
+    width: 60%;
+    height: 18px;
+    margin-top: 4px;
+}
+
+.plans-banner__skeleton-tab {
+    width: 85%;
+    height: 18px;
+}
+
+.plans-banner__skeleton-tab:nth-child(2) {
+    width: 70%;
+}
+
+.plans-banner__skeleton-tab:nth-child(3) {
+    width: 78%;
+}
+
+.plans-banner__skeleton-tabs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Painel de conteúdo */
+.plans-banner__skeleton-panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 16px;
+}
+
+.plans-banner__skeleton-panel-title {
+    width: 40%;
+    height: 28px;
+}
+
+.plans-banner__skeleton-panel-line {
+    width: 100%;
+    height: 16px;
+}
+
+.plans-banner__skeleton-panel-line--short {
+    width: 60%;
+}
+
+.plans-banner__skeleton-cta {
+    width: 180px;
+    height: 44px;
+    border-radius: 3px 3px 12px 3px;
+    margin-top: 14px;
+}

@@ -1,0 +1,12 @@
+{
+ "chave": "landingpage",
+ "temaCss": [],
+ "estilosGlobais": [],
+ "scriptsCabeca": [],
+ "scriptsCorpo": [],
+ "classesBody": "chrome change-tracking-enabled yui3-skin-sam public-page site",
+ "htmlAtributos": {
+  "lang": "pt-BR",
+  "class": "ltr"
+ }
+}

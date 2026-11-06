@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "envios",
+  "info": {
+    "singularName": "envio",
+    "pluralName": "envios",
+    "displayName": "Envio de formulário",
+    "description": "Tudo que os formulários dos sites enviam (leads, ouvidoria, contato)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "formulario": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "string"
+    },
+    "pagina": {
+      "type": "string"
+    },
+    "dados": {
+      "type": "json"
+    },
+    "encaminhado": {
+      "type": "boolean",
+      "default": false
+    },
+    "resposta": {
+      "type": "text"
+    }
+  }
+}

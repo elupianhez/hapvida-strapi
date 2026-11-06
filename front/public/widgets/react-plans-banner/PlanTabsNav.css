@@ -1,0 +1,220 @@
+.plans-banner__tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.plans-banner__tabs
+    .plans-banner__tabs-title{
+        display: inline-flex;
+        color: var(--utilitaries-high-contrast, #000);
+        font-family: 'oxygen-regular', var(--font-family-figtree, Figtree), sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 0;
+}
+
+.plans-banner__tabs .plans-banner__tabs-toggle {
+    display: none;
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    color: var(--utilitaries-high-contrast, #000);
+    font-family: 'oxygen-regular', var(--font-family-figtree, Figtree), sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab:focus-visible {
+    outline: 2px solid #000;
+    border-radius: 4px;
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab.active,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab:hover {
+    color: var(--color-trust, #0435AC);
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__network {
+    display: inline-flex;
+    align-items: center;
+    color: var(--utilitaries-high-contrast, #000);
+    font-family: 'oxygen-regular', var(--font-family-figtree, Figtree), sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__network.active,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__network:hover {
+    text-decoration: none;
+    color: var(--color-trust, #0435AC);
+}
+
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Sobre o Plano']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Carências']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Cobertura']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Abrangência']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Teleconsulta']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Acomodação']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__network[data-section='Rede de atendimento']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Compare os Planos']::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Sobre o Plano']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cpath%20d%3D%22M5%2014a.968.968%200%200%200%20.713-.287A.968.968%200%200%200%206%2013a.968.968%200%200%200-.287-.713A.968.968%200%200%200%205%2012a.968.968%200%200%200-.713.287A.968.968%200%200%200%204%2013a.968.968%200%200%200%20.287.713A.968.968%200%200%200%205%2014Zm0-4a.968.968%200%200%200%20.713-.287A.968.968%200%200%200%206%209a.968.968%200%200%200-.287-.713A.968.968%200%200%200%205%208a.968.968%200%200%200-.713.287A.968.968%200%200%200%204%209a.968.968%200%200%200%20.287.713A.968.968%200%200%200%205%2010Zm0-4a.968.968%200%200%200%20.713-.287A.968.968%200%200%200%206%205a.968.968%200%200%200-.287-.713A.968.968%200%200%200%205%204a.968.968%200%200%200-.713.287A.968.968%200%200%200%204%205a.968.968%200%200%200%20.287.713A.968.968%200%200%200%205%206Zm3%208h6v-2H8Zm0-4h6V8H8Zm0-4h6V4H8ZM2%2018a1.926%201.926%200%200%201-1.412-.588A1.926%201.926%200%200%201%200%2016V2A1.926%201.926%200%200%201%20.588.588%201.926%201.926%200%200%201%202%200h14a1.926%201.926%200%200%201%201.413.588A1.926%201.926%200%200%201%2018%202v14a1.926%201.926%200%200%201-.587%201.412A1.926%201.926%200%200%201%2016%2018Zm0-2h14V2H2ZM2%202Z%22%20fill%3D%22%232d2d2d%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab.active[data-section='Sobre o Plano']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab:hover[data-section='Sobre o Plano']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cpath%20d%3D%22M5%2014a.968.968%200%200%200%20.713-.287A.968.968%200%200%200%206%2013a.968.968%200%200%200-.287-.713A.968.968%200%200%200%205%2012a.968.968%200%200%200-.713.287A.968.968%200%200%200%204%2013a.968.968%200%200%200%20.287.713A.968.968%200%200%200%205%2014Zm0-4a.968.968%200%200%200%20.713-.287A.968.968%200%200%200%206%209a.968.968%200%200%200-.287-.713A.968.968%200%200%200%205%208a.968.968%200%200%200-.713.287A.968.968%200%200%200%204%209a.968.968%200%200%200%20.287.713A.968.968%200%200%200%205%2010Zm0-4a.968.968%200%200%200%20.713-.287A.968.968%200%200%200%206%205a.968.968%200%200%200-.287-.713A.968.968%200%200%200%205%204a.968.968%200%200%200-.713.287A.968.968%200%200%200%204%205a.968.968%200%200%200%20.287.713A.968.968%200%200%200%205%206Zm3%208h6v-2H8Zm0-4h6V8H8Zm0-4h6V4H8ZM2%2018a1.926%201.926%200%200%201-1.412-.588A1.926%201.926%200%200%201%200%2016V2A1.926%201.926%200%200%201%20.588.588%201.926%201.926%200%200%201%202%200h14a1.926%201.926%200%200%201%201.413.588A1.926%201.926%200%200%201%2018%202v14a1.926%201.926%200%200%201-.587%201.412A1.926%201.926%200%200%201%2016%2018Zm0-2h14V2H2ZM2%202Z%22%20fill%3D%22%230435AC%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Carências']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204232%22%20transform%3D%22translate(490%20588)%22%20fill%3D%22%232d2d2d%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Mask%20Group%20399%22%20transform%3D%22translate(-490%20-588)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20d%3D%22M495.5%20598.8a.871.871%200%200%201-.641-.259.871.871%200%200%201-.259-.641.871.871%200%200%201%20.259-.641.871.871%200%200%201%20.641-.259.871.871%200%200%201%20.641.259.871.871%200%200%201%20.259.641.871.871%200%200%201-.259.641.871.871%200%200%201-.641.259Zm3.6%200a.871.871%200%200%201-.641-.259.871.871%200%200%201-.259-.641.871.871%200%200%201%20.259-.641.871.871%200%200%201%20.641-.259.871.871%200%200%201%20.641.259.871.871%200%200%201%20.259.641.871.871%200%200%201-.259.641.871.871%200%200%201-.641.259Zm3.6%200a.871.871%200%200%201-.641-.259.871.871%200%200%201-.259-.641.871.871%200%200%201%20.259-.641.871.871%200%200%201%20.641-.259.871.871%200%200%201%20.641.259.871.871%200%200%201%20.259.641.871.871%200%200%201-.259.641.871.871%200%200%201-.641.259Zm-9.9%207.2a1.733%201.733%200%200%201-1.271-.529A1.733%201.733%200%200%201%20491%20604.2v-12.6a1.733%201.733%200%200%201%20.529-1.271%201.733%201.733%200%200%201%201.271-.529h.9V588h1.8v1.8h7.2V588h1.8v1.8h.9a1.733%201.733%200%200%201%201.271.529%201.733%201.733%200%200%201%20.529%201.271v12.6a1.733%201.733%200%200%201-.529%201.271%201.733%201.733%200%200%201-1.271.529Zm0-1.8h12.6v-9h-12.6Zm0-10.8h12.6v-1.8h-12.6Zm0%200Z%22%20fill%3D%22%232d2d2d%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab.active[data-section='Carências']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab:hover[data-section='Carências']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204232%22%20transform%3D%22translate(490%20588)%22%20fill%3D%22%232d2d2d%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Mask%20Group%20399%22%20transform%3D%22translate(-490%20-588)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20d%3D%22M495.5%20598.8a.871.871%200%200%201-.641-.259.871.871%200%200%201-.259-.641.871.871%200%200%201%20.259-.641.871.871%200%200%201%20.641-.259.871.871%200%200%201%20.641.259.871.871%200%200%201%20.259.641.871.871%200%200%201-.259.641.871.871%200%200%201-.641.259Zm3.6%200a.871.871%200%200%201-.641-.259.871.871%200%200%201-.259-.641.871.871%200%200%201%20.259-.641.871.871%200%200%201%20.641-.259.871.871%200%200%201%20.641.259.871.871%200%200%201%20.259.641.871.871%200%200%201-.259.641.871.871%200%200%201-.641.259Zm3.6%200a.871.871%200%200%201-.641-.259.871.871%200%200%201-.259-.641.871.871%200%200%201%20.259-.641.871.871%200%200%201%20.641-.259.871.871%200%200%201%20.641.259.871.871%200%200%201%20.259.641.871.871%200%200%201-.259.641.871.871%200%200%201-.641.259Zm-9.9%207.2a1.733%201.733%200%200%201-1.271-.529A1.733%201.733%200%200%201%20491%20604.2v-12.6a1.733%201.733%200%200%201%20.529-1.271%201.733%201.733%200%200%201%201.271-.529h.9V588h1.8v1.8h7.2V588h1.8v1.8h.9a1.733%201.733%200%200%201%201.271.529%201.733%201.733%200%200%201%20.529%201.271v12.6a1.733%201.733%200%200%201-.529%201.271%201.733%201.733%200%200%201-1.271.529Zm0-1.8h12.6v-9h-12.6Zm0-10.8h12.6v-1.8h-12.6Zm0%200Z%22%20fill%3D%22%230435AC%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Cobertura']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204232%22%20transform%3D%22translate(490%20588)%22%20fill%3D%22%232d2d2d%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Mask%20Group%20399%22%20transform%3D%22translate(-490%20-588)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20data-name%3D%22Path%208903%22%20d%3D%22M497.625%20601.583h2.75v-3.208h3.208v-2.75h-3.208v-3.208h-2.75v3.208h-3.208v2.75h3.208Zm-5.042%203.667a1.839%201.839%200%200%201-1.833-1.833v-12.834a1.839%201.839%200%200%201%201.833-1.833h12.834a1.839%201.839%200%200%201%201.833%201.833v12.834a1.839%201.839%200%200%201-1.833%201.833Zm0-1.833h12.834v-12.834h-12.834Z%22%20fill%3D%22%232d2d2d%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab.active[data-section='Cobertura']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab:hover[data-section='Cobertura']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204232%22%20transform%3D%22translate(490%20588)%22%20fill%3D%22%232d2d2d%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Mask%20Group%20399%22%20transform%3D%22translate(-490%20-588)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20data-name%3D%22Path%208903%22%20d%3D%22M497.625%20601.583h2.75v-3.208h3.208v-2.75h-3.208v-3.208h-2.75v3.208h-3.208v2.75h3.208Zm-5.042%203.667a1.839%201.839%200%200%201-1.833-1.833v-12.834a1.839%201.839%200%200%201%201.833-1.833h12.834a1.839%201.839%200%200%201%201.833%201.833v12.834a1.839%201.839%200%200%201-1.833%201.833Zm0-1.833h12.834v-12.834h-12.834Z%22%20fill%3D%22%230435AC%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__network[data-section='Rede de atendimento']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204232%22%20transform%3D%22translate(490%20588)%22%20fill%3D%22%232d2d2d%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Group%20399%22%20transform%3D%22translate(-490%20-588)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20data-name%3D%22Path%208904%22%20d%3D%22M498.8%20597.5a1.7%201.7%200%200%200%201.2-2.9%201.7%201.7%200%201%200-2.4%202.4%201.637%201.637%200%200%200%201.2.5Zm0%206.247a23.392%2023.392%200%200%200%203.846-4.324%206.6%206.6%200%200%200%201.254-3.453%205.135%205.135%200%200%200-1.477-3.793%204.926%204.926%200%200%200-3.623-1.477%204.926%204.926%200%200%200-3.623%201.477%205.135%205.135%200%200%200-1.477%203.793%206.6%206.6%200%200%200%201.254%203.453%2023.392%2023.392%200%200%200%203.846%204.324Zm0%202.253a28.257%2028.257%200%200%201-5.111-5.408A8.41%208.41%200%200%201%20492%20595.97a6.574%206.574%200%200%201%202.051-5.079%206.909%206.909%200%200%201%209.5%200%206.574%206.574%200%200%201%202.049%205.079%208.41%208.41%200%200%201-1.689%204.622A28.258%2028.258%200%200%201%20498.8%20606Z%22%20fill%3D%22%232d2d2d%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__network:hover[data-section='Rede de atendimento']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204232%22%20transform%3D%22translate(490%20588)%22%20fill%3D%22%232d2d2d%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Group%20399%22%20transform%3D%22translate(-490%20-588)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20data-name%3D%22Path%208904%22%20d%3D%22M498.8%20597.5a1.7%201.7%200%200%200%201.2-2.9%201.7%201.7%200%201%200-2.4%202.4%201.637%201.637%200%200%200%201.2.5Zm0%206.247a23.392%2023.392%200%200%200%203.846-4.324%206.6%206.6%200%200%200%201.254-3.453%205.135%205.135%200%200%200-1.477-3.793%204.926%204.926%200%200%200-3.623-1.477%204.926%204.926%200%200%200-3.623%201.477%205.135%205.135%200%200%200-1.477%203.793%206.6%206.6%200%200%200%201.254%203.453%2023.392%2023.392%200%200%200%203.846%204.324Zm0%202.253a28.257%2028.257%200%200%201-5.111-5.408A8.41%208.41%200%200%201%20492%20595.97a6.574%206.574%200%200%201%202.051-5.079%206.909%206.909%200%200%201%209.5%200%206.574%206.574%200%200%201%202.049%205.079%208.41%208.41%200%200%201-1.689%204.622A28.258%2028.258%200%200%201%20498.8%20606Z%22%20fill%3D%22%230435AC%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Abrangência']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204232%22%20transform%3D%22translate(490%20588)%22%20fill%3D%22%232d2d2d%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Mask%20Group%20399%22%20transform%3D%22translate(-490%20-588)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20data-name%3D%22Path%208903%22%20d%3D%22M497.625%20601.583h2.75v-3.208h3.208v-2.75h-3.208v-3.208h-2.75v3.208h-3.208v2.75h3.208Zm-5.042%203.667a1.839%201.839%200%200%201-1.833-1.833v-12.834a1.839%201.839%200%200%201%201.833-1.833h12.834a1.839%201.839%200%200%201%201.833%201.833v12.834a1.839%201.839%200%200%201-1.833%201.833Zm0-1.833h12.834v-12.834h-12.834Z%22%20fill%3D%22%232d2d2d%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab.active[data-section='Abrangência']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab:hover[data-section='Abrangência']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204232%22%20transform%3D%22translate(490%20588)%22%20fill%3D%22%230435ac%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Mask%20Group%20399%22%20transform%3D%22translate(-490%20-588)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20data-name%3D%22Path%208903%22%20d%3D%22M497.625%20601.583h2.75v-3.208h3.208v-2.75h-3.208v-3.208h-2.75v3.208h-3.208v2.75h3.208Zm-5.042%203.667a1.839%201.839%200%200%201-1.833-1.833v-12.834a1.839%201.839%200%200%201%201.833-1.833h12.834a1.839%201.839%200%200%201%201.833%201.833v12.834a1.839%201.839%200%200%201-1.833%201.833Zm0-1.833h12.834v-12.834h-12.834Z%22%20fill%3D%22%230435ac%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Teleconsulta']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204391%22%20transform%3D%22translate(30%20420)%22%20fill%3D%22%232d2d2d%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Mask%20Group%20402%22%20transform%3D%22translate(-30%20-420)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20d%3D%22M33.6%20432.667h7.2v-.5a1.858%201.858%200%200%200-.99-1.627%204.871%204.871%200%200%200-2.61-.619%204.871%204.871%200%200%200-2.61.619%201.858%201.858%200%200%200-.99%201.627ZM37.2%20429a1.718%201.718%200%200%200%201.271-.539%201.782%201.782%200%200%200%20.529-1.294%201.782%201.782%200%200%200-.529-1.295%201.718%201.718%200%200%200-1.271-.539%201.718%201.718%200%200%200-1.271.539%201.782%201.782%200%200%200-.529%201.295%201.782%201.782%200%200%200%20.529%201.295A1.718%201.718%200%200%200%2037.2%20429Zm-5.4%207.333a1.717%201.717%200%200%201-1.271-.539A1.781%201.781%200%200%201%2030%20434.5v-11a1.782%201.782%200%200%201%20.529-1.295%201.718%201.718%200%200%201%201.271-.538h10.8a1.718%201.718%200%200%201%201.271.539%201.782%201.782%200%200%201%20.529%201.295v4.125l3.6-3.667v10.083l-3.6-3.667v4.125a1.781%201.781%200%200%201-.529%201.295%201.717%201.717%200%200%201-1.271.539Zm0-1.833h10.8v-11H31.8Zm0%200Z%22%20fill%3D%22%232d2d2d%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab.active[data-section='Teleconsulta']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab:hover[data-section='Teleconsulta']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204391%22%20transform%3D%22translate(30%20420)%22%20fill%3D%22%230435ac%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Mask%20Group%20402%22%20transform%3D%22translate(-30%20-420)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20d%3D%22M33.6%20432.667h7.2v-.5a1.858%201.858%200%200%200-.99-1.627%204.871%204.871%200%200%200-2.61-.619%204.871%204.871%200%200%200-2.61.619%201.858%201.858%200%200%200-.99%201.627ZM37.2%20429a1.718%201.718%200%200%200%201.271-.539%201.782%201.782%200%200%200%20.529-1.294%201.782%201.782%200%200%200-.529-1.295%201.718%201.718%200%200%200-1.271-.539%201.718%201.718%200%200%200-1.271.539%201.782%201.782%200%200%200-.529%201.295%201.782%201.782%200%200%200%20.529%201.295A1.718%201.718%200%200%200%2037.2%20429Zm-5.4%207.333a1.717%201.717%200%200%201-1.271-.539A1.781%201.781%200%200%201%2030%20434.5v-11a1.782%201.782%200%200%201%20.529-1.295%201.718%201.718%200%200%201%201.271-.538h10.8a1.718%201.718%200%200%201%201.271.539%201.782%201.782%200%200%201%20.529%201.295v4.125l3.6-3.667v10.083l-3.6-3.667v4.125a1.781%201.781%200%200%201-.529%201.295%201.717%201.717%200%200%201-1.271.539Zm0-1.833h10.8v-11H31.8Zm0%200Z%22%20fill%3D%22%230435ac%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Acomodação']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204392%22%20transform%3D%22translate(-223%20472)%22%20fill%3D%22%232d2d2d%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Mask%20Group%20403%22%20transform%3D%22translate(223%20-472)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20d%3D%22M-221.286%20489.143a1.651%201.651%200%200%201-1.211-.5%201.651%201.651%200%200%201-.5-1.211v-13.714a1.651%201.651%200%200%201%20.5-1.211%201.651%201.651%200%200%201%201.211-.5h7.714a1.651%201.651%200%200%201%201.211.5%201.651%201.651%200%200%201%20.5%201.211v13.714a1.651%201.651%200%200%201-.5%201.211%201.651%201.651%200%200%201-1.211.5Zm0-9.836a2.9%202.9%200%200%201%20.814-.343%203.7%203.7%200%200%201%20.9-.107h4.286a3.7%203.7%200%200%201%20.9.107%202.9%202.9%200%200%201%20.814.343v-5.593h-7.714Zm3.857-1.307a1.651%201.651%200%200%201-1.211-.5%201.651%201.651%200%200%201-.5-1.211%201.651%201.651%200%200%201%20.5-1.211%201.651%201.651%200%200%201%201.211-.5%201.651%201.651%200%200%201%201.211.5%201.651%201.651%200%200%201%20.5%201.211%201.651%201.651%200%200%201-.5%201.211%201.651%201.651%200%200%201-1.211.5Zm9.429%205.571-1.2-1.2.921-.943H-211v-1.714h2.721l-.921-.943%201.2-1.2%203%203Zm-13.286%203.857h7.714v-5.143a1.651%201.651%200%200%200-.5-1.211%201.651%201.651%200%200%200-1.211-.5h-4.288a1.651%201.651%200%200%200-1.211.5%201.651%201.651%200%200%200-.5%201.211Zm3-.857h1.714v-1.714h1.714v-1.714h-1.713v-1.714h-1.715v1.714H-220v1.714h1.714Zm-3%20.857Z%22%20fill%3D%22%232d2d2d%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab.active[data-section='Acomodação']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab:hover[data-section='Acomodação']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204392%22%20transform%3D%22translate(-223%20472)%22%20fill%3D%22%230435ac%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Mask%20Group%20403%22%20transform%3D%22translate(223%20-472)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20d%3D%22M-221.286%20489.143a1.651%201.651%200%200%201-1.211-.5%201.651%201.651%200%200%201-.5-1.211v-13.714a1.651%201.651%200%200%201%20.5-1.211%201.651%201.651%200%200%201%201.211-.5h7.714a1.651%201.651%200%200%201%201.211.5%201.651%201.651%200%200%201%20.5%201.211v13.714a1.651%201.651%200%200%201-.5%201.211%201.651%201.651%200%200%201-1.211.5Zm0-9.836a2.9%202.9%200%200%201%20.814-.343%203.7%203.7%200%200%201%20.9-.107h4.286a3.7%203.7%200%200%201%20.9.107%202.9%202.9%200%200%201%20.814.343v-5.593h-7.714Zm3.857-1.307a1.651%201.651%200%200%201-1.211-.5%201.651%201.651%200%200%201-.5-1.211%201.651%201.651%200%200%201%20.5-1.211%201.651%201.651%200%200%201%201.211-.5%201.651%201.651%200%200%201%201.211.5%201.651%201.651%200%200%201%20.5%201.211%201.651%201.651%200%200%201-.5%201.211%201.651%201.651%200%200%201-1.211.5Zm9.429%205.571-1.2-1.2.921-.943H-211v-1.714h2.721l-.921-.943%201.2-1.2%203%203Zm-13.286%203.857h7.714v-5.143a1.651%201.651%200%200%200-.5-1.211%201.651%201.651%200%200%200-1.211-.5h-4.288a1.651%201.651%200%200%200-1.211.5%201.651%201.651%200%200%200-.5%201.211Zm3-.857h1.714v-1.714h1.714v-1.714h-1.713v-1.714h-1.715v1.714H-220v1.714h1.714Zm-3%20.857Z%22%20fill%3D%22%230435ac%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab[data-section='Compare os Planos']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204232%22%20transform%3D%22translate(490%20588)%22%20fill%3D%22%232d2d2d%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Group%20399%22%20transform%3D%22translate(-490%20-588)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20d%3D%22M492.717%20605.082a1.729%201.729%200%200%201-1.268-.528%201.729%201.729%200%200%201-.528-1.268v-12.569a1.729%201.729%200%200%201%20.528-1.269%201.73%201.73%200%200%201%201.268-.531h3.592a1.73%201.73%200%200%201%201.269.528%201.729%201.729%200%200%201%20.528%201.269v12.573a1.729%201.729%200%200%201-.528%201.268%201.729%201.729%200%200%201-1.269.528Zm8.981%200a1.729%201.729%200%200%201-1.269-.528%201.729%201.729%200%200%201-.528-1.268v-12.569a1.729%201.729%200%200%201%20.528-1.269%201.73%201.73%200%200%201%201.269-.528h3.592a1.73%201.73%200%200%201%201.269.528%201.729%201.729%200%200%201%20.528%201.269v12.573a1.729%201.729%200%200%201-.528%201.268%201.729%201.729%200%200%201-1.269.528Zm3.592-14.369h-3.592v12.573h3.592Z%22%20fill%3D%22%232d2d2d%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab.active[data-section='Compare os Planos']::before,
+.plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab:hover[data-section='Compare os Planos']::before {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20data-name%3D%22Rectangle%204232%22%20transform%3D%22translate(490%20588)%22%20fill%3D%22%232d2d2d%22%20stroke%3D%22%23707070%22%20d%3D%22M0%200h18v18H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20data-name%3D%22Group%20399%22%20transform%3D%22translate(-490%20-588)%22%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20d%3D%22M492.717%20605.082a1.729%201.729%200%200%201-1.268-.528%201.729%201.729%200%200%201-.528-1.268v-12.569a1.729%201.729%200%200%201%20.528-1.269%201.73%201.73%200%200%201%201.268-.531h3.592a1.73%201.73%200%200%201%201.269.528%201.729%201.729%200%200%201%20.528%201.269v12.573a1.729%201.729%200%200%201-.528%201.268%201.729%201.729%200%200%201-1.269.528Zm8.981%200a1.729%201.729%200%200%201-1.269-.528%201.729%201.729%200%200%201-.528-1.268v-12.569a1.729%201.729%200%200%201%20.528-1.269%201.73%201.73%200%200%201%201.269-.528h3.592a1.73%201.73%200%200%201%201.269.528%201.729%201.729%200%200%201%20.528%201.269v12.573a1.729%201.729%200%200%201-.528%201.268%201.729%201.729%200%200%201-1.269.528Zm3.592-14.369h-3.592v12.573h3.592Z%22%20fill%3D%22%230435AC%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+@media (min-width:744px) and (max-width: 1280px){
+    .plans-banner__tabs .plans-banner__tabs-title {
+        font-size: var(--Oxygen-Heading-Tags-H3, 16px);
+    }
+
+    .plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab {
+        font-size: var(--Oxygen-Paragraph-P3, 14px);
+    }
+}
+
+@media (max-width:743px){
+    .plans-banner__tabs .plans-banner__tabs-title {
+        font-size: var(--Oxygen-Heading-Tags-H3, 16px);
+    }
+
+     .plans-banner__tabs .plans-banner__tabs-itens .plans-banner__tab {
+        font-size: var(--Oxygen-Paragraph-P3, 14px);
+    }
+
+    .plans-banner__tabs .plans-banner__tabs-toggle {
+        all: unset;
+        display: flex;
+        cursor: pointer;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .plans-banner__tabs .plans-banner__tabs-toggle .plans-banner__tabs-toggle-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--color-trust, #0435AC);
+        font-family: 'oxygen-regular', var(--font-family-figtree, Figtree), sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .plans-banner__tabs .plans-banner__tabs-toggle .plans-banner__tabs-toggle-label::after {
+        content: '';
+        display: inline-block;
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+        aspect-ratio: 1/1;
+        background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%3E%3Cmask%20id%3D%22mask0_2091_1956%22%20style%3D%22mask-type%3Aalpha%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2224%22%20height%3D%2224%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20transform%3D%22matrix(1%200%200%20-1%200%2024)%22%20fill%3D%22%23D9D9D9%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23mask0_2091_1956)%22%3E%3Cpath%20d%3D%22M12%2013.2L7.4%208.6L6%2010L12%2016L18%2010L16.6%208.6L12%2013.2Z%22%20fill%3D%22%230043AC%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: transform 0.2s ease;
+    }
+
+    .plans-banner__tabs .plans-banner__tabs-toggle .plans-banner__tabs-toggle-label--open::after {
+        transform: rotate(180deg);
+    }
+
+    .plans-banner__tabs .plans-banner__tabs-itens {
+        display: none;
+    }
+
+    .plans-banner__tabs .plans-banner__tabs-itens--expanded {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+    }
+}

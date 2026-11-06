@@ -1,0 +1,393 @@
+.error-message {
+  color: #EC130F;
+}
+
+.btn-orange {
+  background-color: orange;
+  color: white;
+  border-radius: 50px; /* Cantos arredondados */
+}
+
+.submitFormOuvidoria {
+  box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 34px;
+  width: 97%;
+  margin: auto;
+  padding: 22px;
+}
+
+.submitFormOuvidoria form.formOuvidoria {
+  width: 100%;
+}
+
+.submitFormOuvidoria .formOuvidoria select:not([multiple]):not([size]) {
+  -webkit-appearance: none;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAq0lEQVQ4EWNgGAWDOwRe5/A4kOpCnHreF3AovMnj+f86j6eBWEPf5HEvAOkB6cWqB6bgTS53AlYFSIJv8rgngAwD6UESxmS+yePZAFaIx1CQhUQZBjL+fQGDwOtc7gtv8njevy/gNkC3kiTDYJpxGUqWYQhDORTe5PJ8eJPHfR9kAUWGIQzlNoAZCgozUFDA5MimQekMZhjIpWQbhKwRFDlUMwzZ4FE2fUIAAE34ZrxnKmzuAAAAAElFTkSuQmCC);
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.submitFormOuvidoria .formOuvidoria .form-group {
+  margin-bottom: 21px;
+}
+
+.submitFormOuvidoria .formOuvidoria .form-group .paragrafo {
+  color: #5B5B5F;
+}
+
+.submitFormOuvidoria .formOuvidoria .form-group .horizontal-radio {
+  display: flex;
+}
+
+.submitFormOuvidoria .formOuvidoria .form-group .horizontal-radio .radio {
+  margin-bottom: 0;
+  margin-top: 0 !important;
+  padding-right: 0.5rem !important;
+}
+
+.submitFormOuvidoria .formOuvidoria .form-group .horizontal-radio .radio label {
+  display: flex;
+  align-items: center;
+}
+
+.submitFormOuvidoria .formOuvidoria .form-group .form-control {
+  border-radius: 8px;
+  border: 1px solid rgba(91, 91, 95, 0.4);
+  outline: none;
+  box-shadow: none;
+  padding: 5px 20px;
+  background-color: #fff;
+  font-size: 0.875rem;
+  font-family: oxygen-regular;
+}
+
+.submitFormOuvidoria .formOuvidoria .form-group select {
+  padding: 9px 21px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(91, 91, 95, 0.4);
+  color: #5B5B5F;
+  font-size: 0.875rem;
+  font-family: oxygen-regular;
+  word-wrap: break-word;
+}
+
+.submitFormOuvidoria .formOuvidoria .form-group select:focus-visible {
+  outline: auto;
+  outline-color: #EC6E0C;
+}
+
+.submitFormOuvidoria .formOuvidoria .form-group input:focus-visible {
+  outline: auto;
+  outline-color: #EC6E0C;
+}
+
+.submitFormOuvidoria .formOuvidoria .form-group input::placeholder {
+  color: #5B5B5F;
+}
+
+/*Css custom msg erro*/
+.submitFormOuvidoria .formOuvidoria .error-message {
+  color: #EC130F;
+  margin: 0;
+}
+
+.submitFormOuvidoria .formOuvidoria .error-message a:hover {
+  color: #007BFF;
+}
+
+.form-control .error-border {
+  border: 1px solid red;
+}
+
+/*end*/
+/*Mensagem após enviar form*/
+#successSubscriptionOuvidoria .mensagemPosEnvio {
+  background: #E5F4E7;
+  padding: 20px 26px;
+  border-radius: 8px;
+  color: #5B5B5F;
+  display: flex;
+  font-size: 1rem;
+}
+
+#successSubscriptionOuvidoria .mensagemPosEnvio .tituloMsg {
+  font-family: oxygen-bold;
+  font-size: 1rem;
+  color: #1A171B;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#successSubscriptionOuvidoria {
+  display: block;
+}
+
+/*end*/
+.submitFormOuvidoria .formOuvidoria .textoTextarea {
+  width: 100%;
+  height: 244px;
+  font-size: 0.875rem;
+  border: 1.5px solid #D3D3D5;
+  border-radius: 12px;
+  Padding: 21px;
+  resize: none;
+  font-family: oxygen-regular;
+}
+
+.submitFormOuvidoria .formOuvidoria .msgAtencao {
+  background: #FFF3CD;
+  min-height: 52px;
+  line-height: 52px;
+  text-align: center;
+  font-family: oxygen-bold;
+  font-size: 0.875rem;
+  border-radius: 5px;
+}
+
+.submitFormOuvidoria .formOuvidoria .msgAtencao .atencao {
+  color: #E53432;
+}
+
+/*css custom upload*/
+.submitFormOuvidoria .custom-file-upload {
+  overflow: hidden;
+}
+
+.submitFormOuvidoria .btnUpload {
+  background-color: #EFEFEF;
+  height: 56px;
+  line-height: 56px;
+  border-radius: 5px;
+}
+
+.submitFormOuvidoria .input-file {
+  opacity: 0;
+  display: none;
+}
+
+.submitFormOuvidoria .infoArquivo {
+  display: block;
+  margin-top: 8px;
+  font-size: 10px;
+  font-family: oxygen-regular;
+  color: #5B5B5F;
+}
+
+.submitFormOuvidoria .textUpload {
+  color: #0051C3;
+  cursor: pointer;
+  width: 90%;
+  font-family: oxygen-bold;
+  font-size: 0.875rem;
+}
+
+.submitFormOuvidoria .blocoPrivacidade label {
+  color: #5B5B5F;
+  font-family: oxygen-regular;
+}
+
+.submitFormOuvidoria .formOuvidoria .blocoPrivacidade .paragrafo {
+  color: #5B5B5F;
+  font-family: Oxygen-regular;
+}
+
+.submitFormOuvidoria .formOuvidoria .blocoPrivacidade a:hover {
+  color: #007BFF;
+}
+
+.submitFormOuvidoria .formOuvidoria .btnForm {
+  background-color: #EC6E0C;
+  color: #fff;
+  display: block;
+  width: 87%;
+  border-radius: 8px;
+  margin: 23px auto;
+  padding: 10px 0;
+  font-family: oxygen-bold;
+  font-size: 1rem;
+}
+
+.submitFormOuvidoria .formOuvidoria .btnForm:focus-visible {
+  outline: auto;
+  outline-color: #000;
+}
+
+html .contraste-body .submitFormOuvidoria .formOuvidoria .btnForm {
+  border: 1px solid #ec6e0c;
+}
+
+/*css bloco novo form*/
+.novoForm {
+  border: 1px solid #ECECEC;
+  border-radius: 20px;
+  box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 30px;
+}
+
+.novoForm h2 {
+  font-size: 1.5rem;
+}
+
+.novoForm select:not([multiple]):not([size]) {
+  -webkit-appearance: none;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAq0lEQVQ4EWNgGAWDOwRe5/A4kOpCnHreF3AovMnj+f86j6eBWEPf5HEvAOkB6cWqB6bgTS53AlYFSIJv8rgngAwD6UESxmS+yePZAFaIx1CQhUQZBjL+fQGDwOtc7gtv8njevy/gNkC3kiTDYJpxGUqWYQhDORTe5PJ8eJPHfR9kAUWGIQzlNoAZCgozUFDA5MimQekMZhjIpWQbhKwRFDlUMwzZ4FE2fUIAAE34ZrxnKmzuAAAAAElFTkSuQmCC) !important;
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.novoForm .form-group select {
+  padding: 0px 21px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(91, 91, 95, 0.4);
+  color: #5B5B5F;
+  font-size: 0.875rem;
+  font-family: oxygen-regular;
+}
+
+.novoForm .btnContinuar {
+  background-color: #EC6E0C;
+  color: #fff;
+  display: block;
+  width: 50%;
+  border-radius: 8px;
+  margin: 23px auto;
+  padding: 10px 0;
+  font-family: oxygen-bold;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .submitFormOuvidoria {
+    border-radius: 10px;
+  }
+  .submitFormOuvidoria .formOuvidoria .msgAtencao {
+    font-size: 0.813rem;
+    line-height: 7px;
+    padding: 20px 0;
+  }
+  .submitFormOuvidoria .btnUpload {
+    height: auto;
+    line-height: initial;
+  }
+  .submitFormOuvidoria .textUpload {
+    width: 90%;
+    margin: 0;
+  }
+  .submitFormOuvidoria .input-file {
+    display: none;
+    width: 100%;
+  }
+  #successSubscriptionOuvidoria .mensagemPosEnvio {
+    font-size: 1rem;
+    padding: 20px 25px;
+  }
+  .novoForm .btnContinuar {
+    width: 100%;
+    margin: 0;
+  }
+}
+/*-------Load------*/
+.backgroundLoad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: rgba(8, 8, 8, 0.62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.divModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Modificado para um fundo translúcido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.box_textModal {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  min-height: 244px;
+  background: #fff;
+  border: 1px solid #ccc; /* Adicione uma cor ao border para uma melhor aparência */
+  position: relative;
+}
+
+.box_textModal .close {
+  position: absolute;
+  top: 5px;
+  right: 18px;
+  cursor: pointer;
+  font-size: 1.5rem; /* Aumente o tamanho da fonte para a x ficar mais visível */
+}
+
+.box_textModal .tituloModal {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.box_textModal p {
+  width: 100%;
+}
+
+.box_textModal .desc {
+  max-width: 478px;
+  padding: 0 20px;
+  color: #3C3C3C;
+}
+
+.box_textModal button {
+  background: #EC6E0C;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer; /* Adiciona cursor pointer para indicar que é clicável */
+}
+
+@media (max-width: 768px) {
+  .box_textModal {
+    width: 90%; /* Ajusta o tamanho para telas menores */
+  }
+  .box_textModal .tituloModal {
+    padding: 0 15px;
+  }
+  .box_textModal .close {
+    right: 2px;
+  }
+}
+.texto-manifest {
+  line-height: 19px;
+}
+
+@media (max-width: 768px) {
+  .texto-manifest {
+    line-height: 25px;
+  }
+}

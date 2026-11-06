@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blocos_widgets",
+  "info": {
+    "displayName": "Widget",
+    "icon": "apps",
+    "description": "Componente interativo do front (busca, listas, formulários)"
+  },
+  "options": {},
+  "attributes": {
+    "identificador": {
+      "type": "string",
+      "required": true
+    },
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "html": {
+      "type": "text"
+    },
+    "container": {
+      "type": "string"
+    },
+    "modulo": {
+      "type": "string"
+    },
+    "configuracao": {
+      "type": "json"
+    }
+  }
+}

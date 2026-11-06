@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "singularName": "categoria",
+    "pluralName": "categorias",
+    "displayName": "Categoria",
+    "description": "Categoria de um vocabulário"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "erc": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "vocabulario": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::vocabulario.vocabulario"
+    },
+    "codigoPai": {
+      "type": "biginteger"
+    },
+    "ordem": {
+      "type": "integer"
+    }
+  }
+}

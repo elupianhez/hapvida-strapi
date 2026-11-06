@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blocos_imagem",
+  "info": {
+    "displayName": "Imagem",
+    "icon": "picture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imagem": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "required": true
+    },
+    "legenda": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

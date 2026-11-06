@@ -1,0 +1,20 @@
+{
+ "chave": "ccg",
+ "temaCss": [
+  "/temas/gndi-institucional-lp-theme/css/clay.css",
+  "/temas/gndi-institucional-lp-theme/css/main.css",
+  "/temas/gndi-institucional-lp-theme/js/vendor/slick/slick-theme.css",
+  "/temas/gndi-institucional-lp-theme/js/vendor/slick/slick.css",
+  "https://cdn.jsdelivr.net/npm/swiper@11.2.0/swiper-bundle.min.css",
+  "https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css",
+  "/temas/gndi-institucional-lp-theme/js/jquery-3.6.3.min.js"
+ ],
+ "estilosGlobais": [],
+ "scriptsCabeca": [],
+ "scriptsCorpo": [],
+ "classesBody": "chrome change-tracking-enabled yui3-skin-sam public-page site",
+ "htmlAtributos": {
+  "lang": "pt-BR",
+  "class": "ltr"
+ }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rodapes",
+  "info": {
+    "singularName": "rodape",
+    "pluralName": "rodapes",
+    "displayName": "Rodapé",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "required": true
+    },
+    "colunas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navegacao.coluna-rodape"
+    },
+    "redesSociais": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navegacao.rede-social"
+    },
+    "textoLegal": {
+      "type": "richtext"
+    }
+  }
+}

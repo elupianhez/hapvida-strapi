@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_navegacao_item_menu",
+  "info": {
+    "displayName": "Item de menu",
+    "icon": "bulletList",
+    "description": "Destino: uma Página do site OU uma URL externa. Subitens = segundo nível"
+  },
+  "options": {},
+  "attributes": {
+    "rotulo": {
+      "type": "string",
+      "required": true
+    },
+    "pagina": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pagina.pagina"
+    },
+    "urlExterna": {
+      "type": "string"
+    },
+    "novaAba": {
+      "type": "boolean",
+      "default": false
+    },
+    "subitens": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navegacao.subitem-menu"
+    }
+  }
+}

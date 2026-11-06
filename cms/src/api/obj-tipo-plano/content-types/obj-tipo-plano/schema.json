@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obj_tipo_planos",
+  "info": {
+    "singularName": "obj-tipo-plano",
+    "pluralName": "obj-tipo-planos",
+    "displayName": "Tipo de Plano",
+    "description": "Migrado de \"tipoplanos\""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "erc": {
+      "type": "string"
+    },
+    "escopo": {
+      "type": "string"
+    },
+    "categorias": {
+      "type": "json"
+    },
+    "criadoEm": {
+      "type": "datetime"
+    },
+    "modificadoEm": {
+      "type": "datetime"
+    },
+    "name": {
+      "type": "string"
+    },
+    "textContent": {
+      "type": "richtext"
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bannerImageAlt": {
+      "type": "string"
+    },
+    "serviceNetwork": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    },
+    "planType": {
+      "type": "json"
+    }
+  }
+}

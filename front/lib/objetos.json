@@ -1,0 +1,270 @@
+{
+  "unidades": {
+    "nome": "obj-unidade",
+    "plural": "obj-unidades",
+    "escopo": "company",
+    "campos": {
+      "nomeUnidade": "Text",
+      "razoSocialUnidade": "Text",
+      "responsvelTecnico": "Text",
+      "latitudeUnidade": "Decimal",
+      "longitudeUnidade": "Decimal",
+      "enderecoUnidade": "Text",
+      "telefoneUnidade": "Text",
+      "conselhoRegionalDeMedicina": "Text",
+      "horariosFuncionamento": "MultiselectPicklist",
+      "acessibilidades": "MultiselectPicklist",
+      "sobreUnidade": "RichText",
+      "sites": "MultiselectPicklist",
+      "imagemCapa": "Attachment",
+      "exames": "MultiselectPicklist",
+      "conveniosatendidos": "MultiselectPicklist"
+    },
+    "relacoes": {
+      "imagens": {
+        "alvo": "unidadeimagems",
+        "tipo": "oneToMany"
+      },
+      "especialidades": {
+        "alvo": "especialidades",
+        "tipo": "manyToMany"
+      },
+      "unidadesRelacionadas": {
+        "alvo": "unidades",
+        "tipo": "manyToMany"
+      },
+      "corpoClinico": {
+        "alvo": "unidadecorpoclinicos",
+        "tipo": "oneToMany"
+      }
+    }
+  },
+  "unidadeimagems": {
+    "nome": "obj-unidade-imagem",
+    "plural": "obj-unidade-imagems",
+    "escopo": "company",
+    "campos": {
+      "imagem": "Attachment"
+    },
+    "relacoes": {}
+  },
+  "especialidades": {
+    "nome": "obj-especialidade",
+    "plural": "obj-especialidades",
+    "escopo": "company",
+    "campos": {
+      "nome": "Text",
+      "sites": "MultiselectPicklist"
+    },
+    "relacoes": {
+      "especialidades": {
+        "alvo": "unidades",
+        "tipo": "manyToMany"
+      },
+      "especialidade": {
+        "alvo": "unidadecorpoclinicos",
+        "tipo": "oneToMany"
+      }
+    }
+  },
+  "unidadecorpoclinicos": {
+    "nome": "obj-unidade-corpo-clinico",
+    "plural": "obj-unidade-corpo-clinicos",
+    "escopo": "company",
+    "campos": {
+      "nome": "Text",
+      "crm": "Text"
+    },
+    "relacoes": {}
+  },
+  "accordions": {
+    "nome": "obj-accordion",
+    "plural": "obj-accordions",
+    "escopo": "site",
+    "campos": {
+      "titulo": "Text",
+      "detalhe": "RichText"
+    },
+    "relacoes": {}
+  },
+  "cards": {
+    "nome": "obj-card",
+    "plural": "obj-cards",
+    "escopo": "site",
+    "campos": {
+      "title": "Text",
+      "description": "RichText",
+      "buttonText": "Text",
+      "buttonLink": "Text",
+      "image": "Attachment",
+      "alternativeText": "Text",
+      "content": "RichText"
+    },
+    "relacoes": {}
+  },
+  "verticalbanners": {
+    "nome": "obj-vertical-banner",
+    "plural": "obj-vertical-banners",
+    "escopo": "site",
+    "campos": {
+      "title": "Text",
+      "description": "RichText",
+      "bannerImage": "Attachment",
+      "alternativeText": "Text",
+      "imagemDoBannerMobile": "Attachment",
+      "ttuloRico": "RichText",
+      "textoDoBoto": "Text",
+      "linkDoBoto": "Text",
+      "tabletBannerImage": "Attachment"
+    },
+    "relacoes": {}
+  },
+  "noticias": {
+    "nome": "obj-noticia",
+    "plural": "obj-noticias",
+    "escopo": "company",
+    "campos": {
+      "titulo": "Text",
+      "data": "Date",
+      "subTitulo": "Text",
+      "conteudo": "RichText",
+      "imagem": "Attachment",
+      "sites": "MultiselectPicklist",
+      "categoriaPrincipal": "Text",
+      "ordem": "AutoIncrement",
+      "ordemInt": "Integer"
+    },
+    "relacoes": {}
+  },
+  "informacaoregulatorias": {
+    "nome": "obj-informacao-regulatoria",
+    "plural": "obj-informacao-regulatorias",
+    "escopo": "company",
+    "campos": {
+      "titulo": "Text",
+      "data": "Date",
+      "subTitulo": "Text",
+      "conteudo": "RichText",
+      "sites": "MultiselectPicklist",
+      "ordemInt": "Integer",
+      "ordem": "AutoIncrement"
+    },
+    "relacoes": {}
+  },
+  "demonstrativofinanceiros": {
+    "nome": "obj-demonstrativo-financeiro",
+    "plural": "obj-demonstrativo-financeiros",
+    "escopo": "company",
+    "campos": {
+      "titulo": "Text",
+      "data": "Date",
+      "subTitulo": "Text",
+      "sites": "MultiselectPicklist",
+      "arquivo": "Attachment"
+    },
+    "relacoes": {}
+  },
+  "bannerslides": {
+    "nome": "obj-banner-slide",
+    "plural": "obj-banner-slides",
+    "escopo": "site",
+    "campos": {
+      "title": "RichText",
+      "description": "LongText",
+      "ctaPrimaryLabel": "Text",
+      "ctaPrimaryURL": "Text",
+      "ctaSecondaryLabel": "Text",
+      "ctaSecondaryURL": "Text",
+      "priority": "Integer",
+      "image": "Attachment"
+    },
+    "relacoes": {}
+  },
+  "planocomercials": {
+    "nome": "obj-plano-comercial",
+    "plural": "obj-plano-comercials",
+    "escopo": "site",
+    "campos": {
+      "nomePlano": "Text",
+      "selo": "Text",
+      "descricaoCurta": "Text",
+      "separarBeneficios": "Boolean",
+      "descricaoCobertura": "Text",
+      "textoBotao": "Text",
+      "urlBotao": "Text",
+      "ordem": "Integer",
+      "benefcio1": "Text",
+      "benefcio2": "Text",
+      "benefcio3": "Text",
+      "benefcio4": "Text",
+      "benefcio5": "Text",
+      "benefcio6": "Text",
+      "benefcio7": "Text",
+      "benefcio8": "Text",
+      "destacarSelo": "Boolean"
+    },
+    "relacoes": {}
+  },
+  "faqs": {
+    "nome": "obj-faq",
+    "plural": "obj-faqs",
+    "escopo": "site",
+    "campos": {
+      "pergunta": "Text",
+      "resposta": "RichText",
+      "tema": "Picklist",
+      "ordem": "Integer"
+    },
+    "relacoes": {}
+  },
+  "carddeacessesuareas": {
+    "nome": "obj-card-de-acesse-suarea",
+    "plural": "obj-card-de-acesse-suareas",
+    "escopo": "site",
+    "campos": {
+      "icon": "Attachment",
+      "cardTitle": "Text",
+      "cardText": "RichText",
+      "cardLink": "Text",
+      "userPageArea": "Picklist"
+    },
+    "relacoes": {}
+  },
+  "planos": {
+    "nome": "obj-plano",
+    "plural": "obj-planos",
+    "escopo": "site",
+    "campos": {
+      "name": "Text",
+      "aboutPlan": "RichText",
+      "gracePeriod": "RichText",
+      "teleconsultation": "RichText",
+      "scope": "RichText",
+      "coverage": "RichText",
+      "accommodation": "RichText",
+      "accommodations": "Picklist",
+      "benefits": "MultiselectPicklist"
+    },
+    "relacoes": {}
+  },
+  "tipoplanos": {
+    "nome": "obj-tipo-plano",
+    "plural": "obj-tipo-planos",
+    "escopo": "site",
+    "campos": {
+      "name": "Text",
+      "textContent": "RichText",
+      "bannerImage": "Attachment",
+      "bannerImageAlt": "Text",
+      "serviceNetwork": "Text",
+      "buttonText": "Text",
+      "buttonLink": "Text"
+    },
+    "relacoes": {
+      "planType": {
+        "alvo": "planos",
+        "tipo": "oneToMany"
+      }
+    }
+  }
+}

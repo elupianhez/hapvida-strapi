@@ -1,0 +1,25 @@
+.item_investidor a{
+	color: gray;
+}
+
+.item_investidor a:hover{
+	color: var(--primary);
+    font-family: "oxygen-bold";
+    text-decoration: none;
+}
+
+.acessibilidadeSubmenuCampo li{
+	font-size: 13px;
+    font-family: "oxygen-regular";
+    
+}
+
+.acessibilidadeSubmenuCampo li a{
+	color: gray;
+}
+
+.acessibilidadeSubmenuCampo li a:hover{
+	color: var(--primary);
+    font-family: "oxygen-bold";
+    text-decoration: none;
+}

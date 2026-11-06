@@ -1,0 +1,16 @@
+{
+ "chave": "minas",
+ "temaCss": [
+  "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css",
+  "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css",
+  "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+ ],
+ "estilosGlobais": [],
+ "scriptsCabeca": [],
+ "scriptsCorpo": [],
+ "classesBody": "chrome change-tracking-enabled yui3-skin-sam public-page site ",
+ "htmlAtributos": {
+  "lang": "pt-BR",
+  "class": "ltr"
+ }
+}

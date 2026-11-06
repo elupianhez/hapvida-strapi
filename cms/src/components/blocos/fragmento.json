@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blocos_fragmentos",
+  "info": {
+    "displayName": "Fragmento",
+    "icon": "puzzle",
+    "description": "Uma instância de um modelo de fragmento: os textos, imagens e links que vão no modelo"
+  },
+  "options": {},
+  "attributes": {
+    "instancia": {
+      "type": "string",
+      "required": true
+    },
+    "modelo": {
+      "type": "string",
+      "required": true
+    },
+    "campos": {
+      "type": "json"
+    },
+    "configuracao": {
+      "type": "json"
+    }
+  }
+}

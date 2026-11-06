@@ -1,0 +1,22 @@
+[
+ {
+  "caminho": "/serviço",
+  "destino": "/informacoes-regulatorias",
+  "status": 302
+ },
+ {
+  "caminho": "/nossos-plano",
+  "destino": "/planos-de-saude-empresariais",
+  "status": 302
+ },
+ {
+  "caminho": "/atendimentos",
+  "destino": "/atendimento/saude",
+  "status": 302
+ },
+ {
+  "caminho": "/destaques",
+  "destino": "/linha-de-cuidado-em-endometriose",
+  "status": 302
+ }
+]

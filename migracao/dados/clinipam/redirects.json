@@ -1,0 +1,32 @@
+[
+ {
+  "caminho": "/serviços",
+  "destino": "/linha-de-cuidado-em-endometriose",
+  "status": 302
+ },
+ {
+  "caminho": "/atendimento",
+  "destino": "/atendimento/perguntas-frequentes",
+  "status": 302
+ },
+ {
+  "caminho": "/grupo-odonto",
+  "destino": "/maisodonto/plano-odonto-empresarial-individual",
+  "status": 302
+ },
+ {
+  "caminho": "/nossos-planos",
+  "destino": "/planos-de-saude-empresariais",
+  "status": 302
+ },
+ {
+  "caminho": "/destaques",
+  "destino": "/linha-de-cuidado-em-endometriose",
+  "status": 302
+ },
+ {
+  "caminho": "/objetos",
+  "destino": "/cadastro-unidades",
+  "status": 302
+ }
+]

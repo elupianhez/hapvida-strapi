@@ -1,0 +1,139 @@
+ .searchs-container
+    .search-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 409px;
+        padding: 20px 20px 50px;
+        background: #F5F5F5 0% 0% no-repeat padding-box;
+        border-radius: 3px;
+        gap: 20px;
+        flex-shrink: 0;
+}
+
+
+ .searchs-container
+    .search-item
+        .search-status {
+            display: inline;
+            font-size: 16px;
+            font-weight: 700;
+            font-family: 'oxygen-regular','system-ui';
+            padding-bottom: 10px;
+            color: var(--color-trust, #0435AC);
+            position: relative;
+}
+
+    .searchs-container
+        .search-item
+            .search-status::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 151px;
+                height: 0;
+                border-bottom: 1px solid #5B5B5F66;
+}
+
+ .searchs-container
+    .search-item
+        .search-title {
+            display: inline;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'oxygen-regular','system-ui';
+            color: var(--color-high-contrast, #000);
+}
+
+ .searchs-container
+    .search-item
+        .search-description {
+            display: inline;
+            font-size: 16px;
+            font-family: 'oxygen-regular','system-ui';
+            color: var(--color-text-body, #5B5B5FE6);
+}
+
+ .searchs-container
+    .search-item
+        .search-description > * {
+            padding: 0;
+            margin: 0;
+}
+
+ .searchs-container
+    .search-item
+        .search-link-button {
+            display: flex;
+            width: fit-content;
+            padding: 9px 18px;
+            flex-shrink: 0;
+            background-color: var(--color-trust, #0435AC);
+            border-radius: 3px 3px 12px 3px;
+            gap: 10px;
+
+            font-size: 16px;
+            font-family: 'oxygen-regular','system-ui';
+            font-weight: 700;
+            color: var(--default, #fff);
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+}
+
+ .searchs-container
+    .search-item
+        .search-link-button:hover {
+            color: var(--color-trust, #0435AC);
+            background-color: var(--default, #fff);
+            border: 1px solid var(--color-trust, #0435AC);
+            text-decoration: none;
+}
+
+ .searchs-container
+    .search-item
+        .search-link-button::after {
+            content: "";
+            display: inline-block;
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            align-self: center;
+            background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20id%3D%22arrow_back%22%20d%3D%22M12.175%2C9l-5.6%2C5.6L8%2C16l8-8L8%2C0%2C6.575%2C1.4l5.6%2C5.6H0V9Z%22%20fill%3D%22%23fff%22/%3E%3C/svg%3E') no-repeat center center;
+            background-size: contain;
+}
+
+ .searchs-container
+    .search-item
+        .search-link-button:hover::after {
+            background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20id%3D%22arrow_back%22%20d%3D%22M12.175%2C9l-5.6%2C5.6L8%2C16l8-8L8%2C0%2C6.575%2C1.4l5.6%2C5.6H0V9Z%22%20fill%3D%22%230435AC%22/%3E%3C/svg%3E') no-repeat center center;
+}
+
+@media (min-width:744px) and (max-width: 1280px){
+        .searchs-container
+            .search-item {
+                max-width: inherit;
+                padding: 20px 15px;
+    }
+
+        .searchs-container
+            .search-item
+                .search-link-button {
+                        margin-top: 20px;
+    }
+}
+
+@media (max-width:743px) {
+    searchs-container
+        .search-item {
+        max-width: inherit;
+        padding: 20px 20px 50px;
+    }
+
+
+     .searchs-container
+        .search-item
+            .search-title {
+                font-size: 16px;
+    }
+}

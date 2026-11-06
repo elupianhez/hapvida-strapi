@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_blocos_banner",
+  "info": {
+    "displayName": "Banner",
+    "icon": "landscape",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "texto": {
+      "type": "text"
+    },
+    "imagem": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "botoes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navegacao.botao"
+    }
+  }
+}

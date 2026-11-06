@@ -1,0 +1,30 @@
+{
+  "name": "hapvida-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Site público (Next.js) consumindo o Strapi",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0 -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "qs": "6.17.1",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-markdown": "10.1.0",
+    "remark-gfm": "4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.4",
+    "@tailwindcss/typography": "0.5.20",
+    "@types/node": "22.19.9",
+    "@types/qs": "6.15.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "tailwindcss": "4.3.4",
+    "typescript": "5.7.3"
+  }
+}

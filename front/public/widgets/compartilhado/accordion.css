@@ -1,0 +1,62 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accordion__item {
+    border-bottom: 1px solid #5B5B5F33;
+}
+
+.accordion__item:first-child {
+    border-top: 1px solid #5B5B5F33;
+}
+
+.accordion__header {
+    margin: 0;
+}
+
+.accordion__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    gap: 16px;
+}
+
+.accordion__title {
+    font-family: var(--font-family-figtree, Figtree);
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+
+.accordion__icon {
+    flex: none;
+    color: #5B5B5F;
+    transition: transform 0.2s ease;
+}
+
+.accordion__icon--open {
+    transform: rotate(180deg);
+}
+
+.accordion__panel {
+    padding: 0 0 24px;
+    color: #5B5B5F;
+}
+
+.accordion__panel h4 {
+    margin: 0;
+    font-family: var(--font-family-figtree, Figtree);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: inherit;
+}

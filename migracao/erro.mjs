@@ -1,0 +1,10 @@
+import { chromium } from 'playwright'
+const [site, caminho] = process.argv.slice(2)
+const b = await chromium.launch()
+const c = await b.newContext({ viewport: { width: 1440, height: 900 } })
+await c.route('http://front:3000/**', (r) => r.continue({ headers: { ...r.request().headers(), 'x-forwarded-host': `${site}.localhost` } }))
+const p = await c.newPage()
+p.on('pageerror', (e) => console.log('pageerror', e.message, '\n', (e.stack || '').split('\n').slice(0, 6).join('\n')))
+await p.goto(`http://front:3000${caminho}`, { waitUntil: 'networkidle', timeout: 90000 }).catch(() => {})
+await p.waitForTimeout(3000)
+await b.close()

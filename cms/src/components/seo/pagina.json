@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_seo_pagina",
+  "info": {
+    "displayName": "SEO da página",
+    "icon": "search",
+    "description": "Vazio = usa o título da página e o SEO padrão do site"
+  },
+  "options": {},
+  "attributes": {
+    "tituloSeo": {
+      "type": "string",
+      "maxLength": 70
+    },
+    "descricao": {
+      "type": "text",
+      "maxLength": 160
+    },
+    "imagemCompartilhamento": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "urlCanonica": {
+      "type": "string"
+    },
+    "indexar": {
+      "type": "boolean",
+      "default": true
+    },
+    "incluirNoSitemap": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

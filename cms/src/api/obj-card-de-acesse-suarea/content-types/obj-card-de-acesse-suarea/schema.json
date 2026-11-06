@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obj_card_de_acesse_suareas",
+  "info": {
+    "singularName": "obj-card-de-acesse-suarea",
+    "pluralName": "obj-card-de-acesse-suareas",
+    "displayName": "Card de Acesse sua Área",
+    "description": "Migrado de \"carddeacessesuareas\""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codigo": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "erc": {
+      "type": "string"
+    },
+    "escopo": {
+      "type": "string"
+    },
+    "categorias": {
+      "type": "json"
+    },
+    "criadoEm": {
+      "type": "datetime"
+    },
+    "modificadoEm": {
+      "type": "datetime"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cardTitle": {
+      "type": "string"
+    },
+    "cardText": {
+      "type": "richtext"
+    },
+    "cardLink": {
+      "type": "string"
+    },
+    "userPageArea": {
+      "type": "json"
+    }
+  }
+}

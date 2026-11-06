@@ -1,0 +1,53 @@
+.filtro-regiao-wrapper {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.filtro-regiao-wrapper .filter-select {
+    width: 100%;
+}
+
+.filtro-regiao-wrapper .relative {
+    position: relative;
+    width: 100%;
+    height: 35px;
+}
+
+.filtro-regiao-wrapper .filter-select>.w-full.relative.w-full.m-0 {
+    display: flex;
+    flex: 1;
+}
+
+.filtro-regiao-wrapper input.filtro-select {
+    width: 100% !important;
+    height: 100%;
+    padding-right: 2.5rem;
+}
+
+.filtro-regiao-wrapper button.filtro-select-button {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.filtro-regiao-wrapper,
+.filtro-regiao-wrapper .filter-select,
+.filtro-regiao-wrapper .relative {
+    overflow: visible !important;
+}
+
+.filtro-regiao-wrapper input.filtro-select.input-preenchido {
+    border: 1px solid #5B5B5F33 !important;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+.filtro-select-button.input-preenchido {
+    border-top: 1px solid #5B5B5F33 !important;
+    border-right: 1px solid #5B5B5F33 !important;
+    border-bottom: 1px solid #5B5B5F33 !important;
+    border-left: none !important;
+    opacity: 1;
+}

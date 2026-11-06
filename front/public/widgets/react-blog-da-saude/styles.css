@@ -1,0 +1,27 @@
+@import "./home.css";
+
+.tag {
+	font-weight: bold; margin-right: 1em;
+}
+
+.value {
+	font-family: monospace;
+}
+
+.pre {
+	font-family: monospace; white-space: pre;
+}
+
+
+.total-itens{
+    font-size: 16px;
+    font-family: 'oxygen-regular';
+    padding-bottom: 30px;
+    color: #5b5b5f;
+}
+
+.itens-pesquisa{
+    font-size: 24px;
+    font-family: 'oxygen-bold';
+    padding-bottom: 30px;
+}

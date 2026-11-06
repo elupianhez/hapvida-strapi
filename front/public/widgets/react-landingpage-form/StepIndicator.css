@@ -1,0 +1,50 @@
+.form-indicators{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form-indicators
+        .step-counter{
+            display: inline;
+            margin-bottom: 0;
+
+            color: var(--Colour-ranges-Primary-primary-700, #001453);
+            font-size: var(--Figtree-Paragraphs-Paragraph-2XS, 12px);
+            font-family: 'oxygen-regular', var(--font-family-figtree, Figtree), sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.36px;
+}
+
+.form-indicators
+    .square-indicator {
+        display: flex;
+        gap: 8px;
+}
+
+.form-indicators
+    .square-indicator
+        .square-item {
+            width: 30px;
+            height: 4px;
+            border-radius: 30px;
+            background: var(--Colour-ranges-Neutrals-neutral-200, #E5E7EB);
+}
+
+
+.form-indicators
+    .square-indicator
+        .square-completed {
+            background: var(--Colour-ranges-Secondary-secondary-500, #3C89B7);
+            cursor: pointer;
+
+}
+
+
+.form-indicators
+    .square-indicator
+        .square-active {
+            background: var(--Colour-ranges-Secondary-secondary-200, #CFE3EF);
+            cursor: pointer;
+}

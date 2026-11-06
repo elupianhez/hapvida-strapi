@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cabecalhos",
+  "info": {
+    "singularName": "cabecalho",
+    "pluralName": "cabecalhos",
+    "displayName": "Cabeçalho",
+    "description": "Logo vazio = usa o logo do site"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::site.site",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu.menu"
+    },
+    "botoes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navegacao.botao"
+    },
+    "mostrarBusca": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
